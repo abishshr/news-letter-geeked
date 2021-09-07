@@ -9,9 +9,6 @@ h1 {
 }
 
 
-
-
-
 :root {
     --main-radius: 5px;
     --main-padding: 5px;
@@ -20,21 +17,20 @@ h1 {
 body {
     font-family: "Inter", sans-serif;
     margin: 0;
-    background: linear-gradient(to left, grey, white);
-
-    
-    
+ 
   }
   
 .container {
     display: grid;
     height: 180vh;
     grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr auto auto 1.2fr 1.2fr 0.8fr;
+    grid-template-rows: 0.1fr auto auto auto auto 1.2fr 1.2fr auto;
     grid-template-areas:
         "header header header header"
         "nav nav nav nav"
+        "latest-news-header main main main"
         "sidebar main main main"
+        "sidebar space-news-header space-news-header space-news-header"
         "sidebar space-content-1 space-content-2 space-content-3"
         "star-wars-content-1 star-wars-content-2 star-wars-content-3 star-wars-content-3"
         "footer footer footer footer";
@@ -48,50 +44,47 @@ body {
     
 }
 
-nav {
-    grid-area: nav;
-    border-radius: var(--main-radius);
-    /* padding-top: var(--main-padding); */
-    background-color: #333;
-    overflow: hidden;
-    
-    
-}
-
-
-/* Style the links inside the navigation bar */
-nav a {
-    /* float: left; */
-    /* display: block; */
-    display: inline-block;
+.space-news-divider {
+    background:  #333;
+    grid-area: space-news-header;
     color: #f2f2f2;
+    background-color: #717171;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+    /* padding: 12px 14px; */
+    /* text-decoration: none; */
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    max-height: 50px;
+
 }
-  
+.space-news-divider p {
+padding: 0%;
+margin: 0%;
 
-/* Change the color of links on hover */
-nav a:hover {
+}
+.latest-news-divider {
+    background:  #333;
+    grid-area: latest-news-header;
+    color: #f2f2f2;
+    background-color: #717171;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
 
-    background-color: #fc5c65;
-    color: black;
-  }
-  
-/* Add an active class to highlight the current page */
-/* nav a.active {
-background-color: #04AA6D;
-color: white;
-} */
+}
 
-/* Hide the link that should open and close the nav on small screens */
-nav .icon {
-display: none;
+.main-news-slideshow{
+    grid-area: main;
+    padding-bottom: 0em;
+    padding-bottom: 0em;
+
 }
 
 .slideshow-container {
-grid-area: main;
+
 
 
 position: relative;
@@ -202,20 +195,7 @@ margin:.5em
 
   /* slideshow endingh  */
 
-#header {
-    background:  #333;
-    grid-area: header;
 
-    /* border-radius: var(--main-radius);
-    padding-top: var(--main-padding); */
-    color: #f2f2f2;
-    text-align: center;
-    padding: 12px 14px;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: 'Poppins', sans-serif;
-
-}
      
 /* #sidebar {
 background: #18ffff;
@@ -320,100 +300,6 @@ padding-top: var(--main-padding);
     }
 }
 
-footer{
-    background: #333;
-    padding: 40px 0;
-    grid-area: footer;
-    color: #f2f2f2;
-  }
-  
-  .footer-container{
-    max-width: 1300px;
-    margin: auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-  }
-  
-  #footer-logo{
-
-    font-size: 25px;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .social-media{
-    margin: 20px 0;
-  }
-  
-  .social-media a{
-    color:  #f2f2f2;
-    margin-right: 25px;
-    font-size: 22px;
-    text-decoration: none;
-    transition: .3s linear;
-  }
-  
-  .social-media a:hover{
-    color: #fc5c65;
-  }
-  
-  .right-col h1{
-    font-size: 23px;
-  }
-  
-  .border{
-    width: 100px;
-    height: 4px;
-    background: #fc5c65;
-  }
-  
-  .newsletter-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .txtb{
-    flex: 1;
-    padding: 18px 40px;
-    font-size: 14px;
-    color: #293043;
-    background: #ddd;
-    border: none;
-    font-weight: 700;
-    outline: none;
-    border-radius: 30px;
-    min-width: 260px;
-  }
-  
-  .btn{
-    padding: 18px 40px;
-    font-size: 16px;
-    color: #f1f1f1;
-    background: #fc5c65;
-    border: none;
-    font-weight: 700;
-    outline: none;
-    border-radius: 30px;
-    margin-left: 20px;
-    cursor: pointer;
-    transition: opacity .3s linear;
-  }
-  
-  .btn:hover{
-    opacity: .7;
-  }
-  
-  .page-content{
-    min-height: 100vh;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   
   @media screen and (max-width:960px) {
     .footer-container{
@@ -421,7 +307,7 @@ footer{
     }
     .right-col{
       width: 100%;
-      margin-bottom: 60px;
+      margin-bottom: 20px;
     }
   
     .left-col{
@@ -507,15 +393,15 @@ footer{
 
 
 #space-content-1 .wrapper {
-    background: url(media/images/space-img-1.svg)  center / cover no-repeat;
+    background: url(/media/images/space-img-1.svg)  center / cover no-repeat;
     margin: 4pt;
 }
 #space-content-2 .wrapper {
-    background: url(media/images/space-img-2.svg)  center / cover no-repeat;
+    background: url(/media/images/space-img-2.svg)  center / cover no-repeat;
     margin: 4pt;
 }
 #space-content-3 .wrapper {
-    background: url(media/images/space-img-3.svg)  center / cover no-repeat;
+    /* background: url(media/images/space-img-3.svg)  center / cover no-repeat; */
     margin: 4pt;
 }
 
@@ -644,3 +530,64 @@ footer{
 	padding-right: 0.5em;
 	font-size: 1em;
 }
+
+
+
+
+/*  */
+.latest-news-divider nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.latest-news-divider nav li {
+    width: 20rem;
+    height: 7rem;
+    font-size: 20px;
+    text-align: center;
+    line-height: 7rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    margin: 3rem;
+}
+
+.latest-news-divider nav li::before,
+.latest-news-divider nav li::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.latest-news-divider nav li::before {
+    background-color: white;
+    z-index: -1;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.latest-news-divider nav li::after {
+    background-color: goldenrod;
+    transform: translate(1.5rem, 1.5rem);
+    z-index: -2;
+}
+
+.latest-news-divider nav li:hover {
+    transform: translate(1.5rem, 1.5rem);
+    color: white;
+}
+
+.latest-news-divider nav li:hover::before {
+    background-color: goldenrod;
+}
+
+.latest-news-divider nav li:hover::after {
+    background-color: white;
+    transform: translate(-1.5rem, -1.5rem);
+}
+
