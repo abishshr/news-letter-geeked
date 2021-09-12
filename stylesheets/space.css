@@ -1,0 +1,255 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    }
+
+.container{
+    display: grid;
+    height: 165vh;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: .04fr .02fr .01fr auto  auto .01fr auto .05fr ;
+    /* grid-template-rows: auto auto auto auto ; */
+    grid-template-areas:
+        "header header header header "
+        "nav nav nav nav"
+        "comic-news-divider comic-news-divider comic-news-divider comic-news-divider"
+        "comics-news-1 comics-news-2 comics-news-3 comics-news-4"
+        "main main main main"
+        "comic-release-divider comic-release-divider comic-release-divider comic-release-divider"
+        "comics-release-1 comics-release-2 comics-release-3 comics-release-4"
+        "footer footer footer footer";
+    grid-gap: 0.2rem;
+    font-weight: 800;
+    /* text-transform: uppercase; */
+    font-size: 12px;
+    color: #004d40;
+    text-align: center;
+    padding-left: .2em;
+    padding-right: .2em;
+    border-radius: 5px;
+
+}
+.latest-comic-news-divider{
+    grid-area:comic-news-divider;
+    background:  #333;
+    color: #f2f2f2;
+    background-color: #333;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+
+
+}
+
+
+.latest-comics-releases-divider{
+    grid-area:comic-release-divider;
+    background:  #333;
+    color: #f2f2f2;
+    background-color: #333;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+
+
+}
+.comics-main-news{
+    grid-area:main;
+
+
+}
+#comics-news-1{
+    grid-area:comics-news-1;
+    margin:.5em
+
+
+}
+#comics-news-2{
+    grid-area:comics-news-2;
+    margin:.5em
+
+
+}
+#comics-news-3{
+    grid-area:comics-news-3;
+    margin:.5em
+}
+#comics-news-4{
+    grid-area:comics-news-4;
+    margin:.5em
+
+
+}
+
+#comics-release-1{
+    grid-area:comics-release-1;
+    margin:.5em
+
+
+}
+#comics-release-2{
+    grid-area:comics-release-2;
+    margin:.5em
+
+
+}
+#comics-release-3{
+    grid-area:comics-release-3;
+    margin:.5em
+
+
+}
+#comics-release-4{
+    grid-area:comics-release-4;
+    margin:.5em
+
+
+}
+
+.card{
+    overflow: hidden;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+   
+}
+.card-image{
+    height: 15rem;
+    width :100%;
+    object-fit: cover;
+}
+.card-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+.card-description{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: black;
+}
+
+.card-link{
+    text-decoration: none;
+    color :black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+.slideshow-container {
+position: relative;
+margin-left: 1em;
+margin-right: 1em;
+margin-top: .3em;
+margin-bottom: 0em;
+border-radius: 25px;
+/* margin:.5em */
+}
+
+
+/* Slideshow setting here  */
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    margin-bottom: 0%;
+    
+}
+
+.mySlides img {
+    max-height: auto;
+    width: 100%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0%;
+    border-radius: 15px;
+
+}
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -5px;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    
+}
+.prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 1px 0 0 1px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 0px 15px;
+    position: absolute;
+    bottom: .5em;
+    width: 100%;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 10;
+  }
+  
+  .text a {
+    color: #f2f2f2;
+    font-size: 12px;}
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: 0em;
+    
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
