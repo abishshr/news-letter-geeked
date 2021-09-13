@@ -114,6 +114,7 @@ body {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
     margin-bottom: 0%;
     border-radius: 15px;
+    filter: brightness(66%);
 }
   /* Next & previous buttons */
 .prev, .next {
@@ -263,7 +264,7 @@ body {
 @media only screen and (max-width: 550px) {
 .container {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-rows: auto auto 0.3fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
     grid-template-areas:
     "header"
     "nav"
@@ -373,7 +374,7 @@ body {
 .card .title {
     padding-bottom: 2rem;
 
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal ;
     font-family: 'Poppins', sans-serif;
     
@@ -400,22 +401,22 @@ body {
 
 
 #space-content-1 .wrapper {
-    background: url(/media/images/space-news/space-news-mars.svg)  center / cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(/media/images/index-space-news/space-news-mars.svg)  center / cover no-repeat;
     border-radius: 5px;
     margin-left:1em;
 }
 #space-content-2 .wrapper {
-    background: url(/media/images/space-news/space-news-rover.svg)  center / cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(/media/images/index-space-news/space-news-rover.svg)  center / cover no-repeat;
     margin-left:1em;
     border-radius: 5px;
     
 }
 #space-content-3 .wrapper {
-    background: url(/media/images/space-news/space-news-spacex.svg)  center / cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(/media/images/index-space-news/space-news-spacex.svg)  center / cover no-repeat;
     margin-top: 0%;
     margin-bottom: 1em;
     margin-left:1em;
-    margin-right: 0.4em;
+    margin-right: 0.3em;
     border-radius: 5px;
 }
 
@@ -486,35 +487,36 @@ body {
 
 /* Comic news card specific styling */
 #comics-content-1 .wrapper {
-  background: url(/media/images/space-img-1.svg)  center / cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(/media/images/comics-news/comics-news-avengers.svg)  center / cover no-repeat ;
   /* margin: 4pt; */
   border-radius: 5px;
   margin-left:1em;
+  
 }
 #comics-content-2 .wrapper {
-  background: url(/media/images/space-img-2.svg)  center / cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(/media/images/comics-news/comics-news-spiderman.svg)  center / cover no-repeat;
   /* margin: 4pt; */
   margin-left:1em;
   border-radius: 5px;
   
 }
 #comics-content-3 .wrapper {
-  background: url(/media/images/space-img-3.svg)  center / cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(/media/images/comics-news/comics-news-mars-mystique.svg)  center / cover no-repeat;
   /* margin: 4pt; */
   margin-top: 0%;
   margin-bottom: 1em;
   margin-left:1em;
-  margin-right: 0.4em;
+  margin-right: 0.3em;
   border-radius: 5px;
 }
 
 #comics-content-4 .wrapper {
-  background: url(/media/images/space-img-3.svg)  center / cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(/media/images/comics-news/comics-news-joker.svg)  center / cover no-repeat;
   /* margin: 4pt; */
   margin-top: 0%;
   margin-bottom: 1em;
   margin-left:1em;
-  margin-right: 0.4em;
+  margin-right: 0.3em;
   border-radius: 5px;
 }
 .comics-content .wrapper:hover .menu-content span {
@@ -661,7 +663,7 @@ body {
 	margin: 0;
 	padding-top: 2em;
 	padding-right: 0.5em;
-	font-size: 15px;
+	font-size: 12px;
   font-family: 'Poppins', sans-serif;
   font-weight: 10;
   color: #000;

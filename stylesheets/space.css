@@ -7,18 +7,18 @@ body {
 
 .container{
     display: grid;
-    height: 165vh;
+    height: 295vh;
     grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows: .04fr .02fr .01fr auto  auto .01fr auto .05fr ;
+    grid-template-rows: .04fr .02fr auto  0.1fr  auto .01fr auto .05fr ;
     /* grid-template-rows: auto auto auto auto ; */
     grid-template-areas:
-        "header header header header "
+        "header header header header"
         "nav nav nav nav"
-        "comic-news-divider comic-news-divider comic-news-divider comic-news-divider"
-        "comics-news-1 comics-news-2 comics-news-3 comics-news-4"
         "main main main main"
-        "comic-release-divider comic-release-divider comic-release-divider comic-release-divider"
-        "comics-release-1 comics-release-2 comics-release-3 comics-release-4"
+        "space-news-divider-upper space-news-divider-upper space-news-divider-upper space-news-divider-upper"
+        "space-news-1 space-news-2 space-news-3 space-news-4"
+        "space-news-divider-lower space-news-divider-lower space-news-divider-lower space-news-divider-lower"
+        "space-news-5 space-news-6 space-news-7 space-news-8"
         "footer footer footer footer";
     grid-gap: 0.2rem;
     font-weight: 800;
@@ -30,9 +30,27 @@ body {
     padding-right: .2em;
     border-radius: 5px;
 
+
 }
-.latest-comic-news-divider{
-    grid-area:comic-news-divider;
+.space-news-divider-upper{
+    grid-area:space-news-divider-upper;
+    background:  #333;
+    color: #f2f2f2;
+    background-color: #333;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+
+   
+
+
+}
+
+
+.space-news-divider-lower{
+    grid-area:space-news-divider-lower;
     background:  #333;
     color: #f2f2f2;
     background-color: #333;
@@ -44,77 +62,62 @@ body {
 
 
 }
-
-
-.latest-comics-releases-divider{
-    grid-area:comic-release-divider;
-    background:  #333;
-    color: #f2f2f2;
-    background-color: #333;
-    text-align: left;
-    font-size: 25px;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 10px;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
-
-
-}
-.comics-main-news{
+.space-main-news{
     grid-area:main;
+ 
 
 
 }
-#comics-news-1{
-    grid-area:comics-news-1;
-    margin:.5em
+#space-news-1{
+    grid-area:space-news-1;
+    margin:1em;
+    z-index: 22;
 
 
 }
-#comics-news-2{
-    grid-area:comics-news-2;
-    margin:.5em
+#space-news-2{
+    grid-area:space-news-2;
+    margin:1em
 
 
 }
-#comics-news-3{
-    grid-area:comics-news-3;
-    margin:.5em
+#space-news-3{
+    grid-area:space-news-3;
+    margin:1em
 }
-#comics-news-4{
-    grid-area:comics-news-4;
-    margin:.5em
-
-
-}
-
-#comics-release-1{
-    grid-area:comics-release-1;
-    margin:.5em
+#space-news-4{
+    grid-area:space-news-4;
+    margin:1em
 
 
 }
-#comics-release-2{
-    grid-area:comics-release-2;
-    margin:.5em
+
+#space-news-5{
+    grid-area:space-news-5;
+    margin:1em
 
 
 }
-#comics-release-3{
-    grid-area:comics-release-3;
-    margin:.5em
+#space-news-6{
+    grid-area:space-news-6;
+    margin:1em
 
 
 }
-#comics-release-4{
-    grid-area:comics-release-4;
-    margin:.5em
+#space-news-7{
+    grid-area:space-news-7;
+    margin:1em
+}
+#space-news-8{
+    grid-area:space-news-8;
+    margin:1em
 
 
 }
 
 .card{
     overflow: hidden;
-    border: 1px solid black;
+  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -122,31 +125,42 @@ body {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
+    margin:2em;
+    background-color: white;
+    
    
 }
+.card:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 .card-image{
-    height: 15rem;
+    height: 20rem;
     width :100%;
     object-fit: cover;
 }
+
 .card-title{
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bolder;
     color: black;
+    text-align: center;
 }
 .card-description{
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: normal;
     color: black;
+    text-align: center;
+    margin: 1em;
 }
 
 .card-link{
     text-decoration: none;
     color :black;
     font-family: 'Poppins', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
+    margin-bottom: 2em;
 }
 
 .slideshow-container {
@@ -175,6 +189,7 @@ border-radius: 25px;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
     margin-bottom: 0%;
     border-radius: 15px;
+    filter: brightness(70%);
 
 }
   /* Next & previous buttons */
@@ -210,7 +225,7 @@ border-radius: 25px;
   }
   
   /* Caption text */
-  .text {
+  .text p{
     color: #f2f2f2;
     font-size: 15px;
     padding: 0px 15px;
@@ -219,7 +234,8 @@ border-radius: 25px;
     width: 100%;
     text-align: left;
     font-family: 'Poppins', sans-serif;
-    font-weight: 10;
+    font-weight: normal;
+
   }
   
   .text a {
@@ -253,3 +269,51 @@ border-radius: 25px;
 background-color: #717171;
 }
 
+
+@media only screen and (max-width: 550px) {
+    .container {
+        height: 125vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: .04fr .02fr .01fr 2.8fr auto auto auto .01fr  auto auto auto auto .02fr;
+        grid-template-areas:
+        "header"
+        "nav"
+        "space-news-divider-upper"
+        "space-news-1"
+        "space-news-2" 
+        "space-news-3" 
+        "space-news-4"
+        "space-news-divider-lower"
+        "space-news-5" 
+        "space-news-6" 
+        "space-news-7" 
+        "space-news-8"
+        "footer";
+        ;
+    }
+    /* .nav a:not(:first-child) {display: none;} */
+    .nav a {display: none;}
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+    .nav.responsive {position: relative;}
+    .nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .btn{
+        margin: 0;
+        width: 100%;
+        margin-top: 20px;
+        }
+    .card{
+        min-height: 500px;
+    }
+    }
