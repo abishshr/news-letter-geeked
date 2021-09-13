@@ -1,0 +1,310 @@
+/* importing custom font */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+/* Body styling */
+/* mycolor.space is used to create a 3 color gradient background image */
+body {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    margin: 0;
+    background-image: linear-gradient(to left, #787878, #858585, #929292, #9f9f9f, #adadad, #b8b8b8, #c4c4c4, #cfcfcf, #dbdbdb, #e7e7e7, #f3f3f3, #ffffff);}
+.container{
+    display: grid;
+    height: 45vh;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: .04fr .02fr .1fr .03fr ;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "cubeContainer cubeContainer cubeContainer"
+        "footer footer footer";
+    grid-gap: 0.2rem;
+    font-weight: 800;
+    font-size: 12px;
+    color: #004d40;
+    text-align: center;
+    padding-left: .2em;
+    padding-right: .2em;
+    border-radius: 5px;
+
+}
+/* Person Container styling */
+#cubeContainer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area:cubeContainer;
+    margin-top: 0em;
+    margin-bottom: 15em;
+    border: black 2px;
+}
+#cubeWrapper {
+    width: 80em;
+    display: flex;
+    flex-direction: column;
+}
+#cubes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.head {
+    text-align: center;
+}
+.head h1 {
+    font-weight: 20;
+    position: relative;
+    color: black;
+    font-weight: bold;
+    text-shadow: 2px 2px white ;
+}
+.head h1:before, .head h1:after {
+    content: "";
+    height: 1px;
+    width: 150px;
+    background: #aaa;
+    display: block;
+    position: absolute;
+    top: 50%;
+}
+.head h1:before {
+    left: 0;
+}
+.head h1:after {
+    right: 0;
+}
+.moreTeam {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1.8em;
+    color: #000;
+    font-weight: bold;
+}
+.moreTeam a {
+    color: #444;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+.moreTeam a svg {
+    padding-left: 5px;
+}
+.moreTeam a:hover {
+    background: #ddd;
+}
+
+/* All the persons are randomly generated using https://thispersondoesnotexist.com/ */
+.p1 {
+    background: url('/assets/img/meet-the-team/person-1.jpg') center;
+}
+.p2 {
+    background: url('/assets/img/meet-the-team/person-2.jpg') center;
+}
+.p3 {
+    background: url('/assets/img/meet-the-team/person-3.jpg') center;
+}
+.p4 {
+    background: url('/assets/img/meet-the-team/person-4.jpg') center;
+}
+.p5 {
+    background: url('/assets/img/meet-the-team/person-5.jpg') center;
+}
+.p6 {
+    background: url('/assets/img/meet-the-team/person-6.jpg') center;
+}
+.cube {
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+.cube .name {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    text-shadow: 0 1px 3px #000;
+    z-index: 3;
+}
+.cube .name h1 {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+    user-select: none;
+}
+.cube .name p {
+    color: #fff;
+    margin: 0;
+    font-size: 14px;
+    user-select: none;
+}
+.cube .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+.cube .content ul {
+    padding: 0;
+    margin: 0 0 55px 0;
+    cursor: default;
+    text-align: center;
+}
+.cube .content ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 11.05px 10px 11.05px;
+    top: 40px;
+    position: relative;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+.cube .content ul li a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.cube .content ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+.cube:hover .content {
+    opacity: 1;
+}
+.cube:hover .content li {
+    top: 15px;
+    opacity: 1;
+    transition: 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.cube:hover .content li:nth-child(2) {
+    transition-delay: 0.2s;
+}
+.cube:hover .content li:nth-child(3) {
+    transition-delay: 0.4s;
+}
+.cube:hover .content li:nth-child(4) {
+    transition-delay: 0.6s;
+}
+.cube:hover .content h1 {
+    top: 0;
+}
+.cube:hover .content p {
+    top: 10px;
+}
+.cube:hover .innerBorder {
+    width: 90%;
+    height: 90%;
+    opacity: 1;
+}
+.cube:hover .darken {
+    opacity: 1;
+}
+.cube:last-child, .cube:nth-child(3) {
+    margin-right: 0;
+}
+.darken {
+    background: rgba(38, 50, 56, 0.85);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+.innerBorder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid #fff;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+/* Person Container styling ends here  */
+.footer{
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+}
+
+/*Styling for smaller display like phone   */
+@media only screen and (max-width: 550px) {
+    .container {
+        height: 125vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: .04fr .01fr auto .01fr ;
+        grid-template-areas:
+        "header"
+        "nav"
+        "cubeContainer"
+        "footer";
+    }
+
+.nav a {display: none;}
+.nav a.icon {
+    float: right;
+    display: block;
+}
+.nav.responsive {position: relative;}
+.nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+.btn{
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+    }
+
+.submit-btn{
+    margin:0em;
+    margin-top:1.2em;
+    margin-bottom:.2em;
+ }
+
+.cubeContainer{
+    padding: 0em;
+    margin: 0;
+}
+.cube {
+    height: 200px;
+    width: 200px;
+    margin: 0;
+}
+#cubeWrapper {
+    
+    padding-bottom: 30em;
+    padding-right: 5em;
+    padding-left: 5em;
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+}
+    }

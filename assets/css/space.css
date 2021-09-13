@@ -1,0 +1,312 @@
+/* importing custom font */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+/* Body styling */
+/* mycolor.space is used to create a 3 color gradient background image */
+body {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    margin: 0;
+    background-image: linear-gradient(to left, #787878, #858585, #929292, #9f9f9f, #adadad, #b8b8b8, #c4c4c4, #cfcfcf, #dbdbdb, #e7e7e7, #f3f3f3, #ffffff);
+    }
+/*This is the main container/wrapper  which contains all the div/grids 
+  A CSS Grid layout styling is chosen   */
+.container{
+    display: grid;
+    height: 145vh;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: .04fr .02fr auto  0.1fr  auto .01fr auto .05fr ;
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "main main main main"
+        "space-news-divider-upper space-news-divider-upper space-news-divider-upper space-news-divider-upper"
+        "space-news-1 space-news-2 space-news-3 space-news-4"
+        "space-news-divider-lower space-news-divider-lower space-news-divider-lower space-news-divider-lower"
+        "space-news-5 space-news-6 space-news-7 space-news-8"
+        "footer footer footer footer";
+    grid-gap: 0.2rem;
+    font-weight: 800;
+    font-size: 12px;
+    color: #004d40;
+    text-align: center;
+    padding-left: .2em;
+    padding-right: .2em;
+    border-radius: 5px;
+}
+/* This is for the Space News banner/divider/heading -Latest News */
+.space-news-divider-upper{
+    grid-area:space-news-divider-upper;
+    background:  #333;
+    color: #f2f2f2;
+    background-color: #333;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Poppins', 'Inter', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* This is for the Space News banner/divider/heading -Other News */
+.space-news-divider-lower{
+    grid-area:space-news-divider-lower;
+    background:  #333;
+    color: #f2f2f2;
+    background-color: #333;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Poppins', 'Inter', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+
+
+}
+/* This is for the main slideshow for the space news */
+.space-main-news{
+    grid-area:main;
+}
+.slideshow-container {
+    position: relative;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: .3em;
+    margin-bottom: 0em;
+    border-radius: 25px;
+}
+/* Slideshow setting here  */
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    margin-bottom: 0%;
+        
+}
+    
+.mySlides img {
+    max-height: auto;
+    width: 100%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0%;
+    border-radius: 15px;
+    filter: brightness(70%);
+    
+}
+      /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -5px;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+      /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 1px 0 0 1px;
+}
+
+      /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+      /* Description text */
+.text p{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 0px 15px;
+    position: absolute;
+    bottom: .5em;
+    width: 100%;
+    text-align: left;
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-weight: normal;
+}
+.text a {
+    color: #f2f2f2;
+    font-size: 12px;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: 0em;
+    
+}
+    
+.active, .dot:hover {
+    background-color: #717171;
+}
+/*  main slideshow for the space news styling ends here  */   
+
+/* These are all the space news article  */
+#space-news-1{
+    grid-area:space-news-1;
+    margin:1em;
+    z-index: 22;
+}
+#space-news-2{
+    grid-area:space-news-2;
+    margin:1em
+}
+#space-news-3{
+    grid-area:space-news-3;
+    margin:1em
+}
+#space-news-4{
+    grid-area:space-news-4;
+    margin:1em
+}
+
+#space-news-5{
+    grid-area:space-news-5;
+    margin:1em
+}
+#space-news-6{
+    grid-area:space-news-6;
+    margin:1em
+}
+#space-news-7{
+    grid-area:space-news-7;
+    margin:1em
+}
+#space-news-8{
+    grid-area:space-news-8;
+    margin:1em
+
+}
+/* This is the common styling for all the article card  */
+.card{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family: 'Poppins', 'Inter', sans-serif;
+    margin:2em;
+    background-color: white;
+    min-height: 43em;
+}
+.card:hover {
+    transform: scale(1.2); 
+}
+.card-image{
+    height: 20rem;
+    width :100%;
+    object-fit: cover;
+}
+.card-title{
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+}
+.card-description{
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    margin: 1em;
+}
+.card-link{
+    text-decoration: none;
+    color :black;
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-size: 16px;
+    margin-bottom: 2em;
+}
+/* The common styling of the article card ends here  */
+
+
+
+/* Styling for phone screen  */
+@media only screen and (max-width: 550px) {
+    .container {
+        height: 135vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: .04fr .02fr auto .01fr 2.8fr auto auto auto .01fr  auto auto auto auto .02fr;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "space-news-divider-upper"
+        "space-news-1"
+        "space-news-2" 
+        "space-news-3" 
+        "space-news-4"
+        "space-news-divider-lower"
+        "space-news-5" 
+        "space-news-6" 
+        "space-news-7" 
+        "space-news-8"
+        "footer";
+        ;
+    }
+    /* .nav a:not(:first-child) {display: none;} */
+    .nav a {display: none;}
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+    .nav.responsive {position: relative;}
+    .nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .btn{
+        margin: 0;
+        width: 100%;
+        margin-top: 20px;
+        }
+    .card{
+        min-height: 550px;
+    }
+
+    .card:hover {
+        transform: scale(1); 
+    }
+    .submit-btn{
+        margin:.8em;
+        margin-top:1.2em;
+    }
+    .left-col{
+        margin-left: 4em;
+    }
+    .right-col{
+        margin-left: 2em;
+    }
+    }

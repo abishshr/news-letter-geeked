@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/common.css">
-    <link rel="stylesheet" href="/stylesheets/space.css">
+    <meta name="description" content="This is a website for a community of people interested in knowing the latest news in tech ,space and comics">
+    <meta name="author" content="UOL">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="600">
+    <meta name="keywords" content="Latest News in Tech, space and comics ">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/space.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
-    <title>Document</title>
+    <title>GEEKÈD -Space News</title>
 </head>
 <body>
+    <!-- Main Container which contains all elements  -->
     <div class="container">
         <!-- Header Logo  -->
             <div id="header-logo">
@@ -28,17 +34,17 @@
                     <i class="fa fa-bars"></i>
                 </a>
             </nav>
-        <!-- Common Header and navigation bar ends here-->
-        <!-- Slideshow container -->
+            <!-- Common Header and navigation bar ends here-->
+            <!-- Slideshow container -->
+            <!-- Slideshow container contains one main news from space ,comics and tech-->
             <div class="space-main-news">
                 <div class="slideshow-container">
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides fade">
+                    <!-- First slide   -->
                     <div class="numbertext">1 / 3</div>
-                    <img src="/media/images/space-slideshow/space-slideshow-1.svg" style="width:100%">
-                    
+                    <img src="/assets/img/space-slideshow/space-slideshow-1.svg" alt="Inspiration4 crew image" style="width:100%">
                     <div class="text">
-                        
                         <p> Space News |11 sep 2021| <br>
                         The Inspiration4 crew of (from left) Chris Sembroski, Sian Proctor, Jared Isaacman and Hayley Arceneaux 
                         <br> Credit: Inspiration4 </br>
@@ -46,14 +52,12 @@
                         <i class="fa fa-caret-right"></i>
                         </a>
                         </p>
-                        
-                    
                     </div>
-                    
+                    <!-- Second slide   -->
                     </div>
                     <div class="mySlides fade">
                     <div class="numbertext">2 / 3</div>
-                    <img src="/media/images/space-slideshow/space-slideshow-2.svg" style="width:100%">
+                    <img src="/assets/img/space-slideshow/space-slideshow-2.svg" alt="Falcon heavy rocket image" style="width:100%">
                     <div class="text">
                         <p> Space News |28 Feb 2021| <br>
                             NASA announced Feb. 28 it will use a Falcon Heavy to launch its Psyche asteroid mission in 2022. 
@@ -64,11 +68,11 @@
                             </p>
                     </div>
                     </div>
+                    <!-- Third  slide   -->
                     <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
-                    <img src="/media/images/space-slideshow/space-slideshow-3.svg" style="width:100%">
+                    <img src="/assets/img/space-slideshow/space-slideshow-3.svg" alt="James Webb Space Telescope image" style="width:100%">
                     <div class="text">
-
                         <p> Space News |11 sep 2021| <br>
                             NASA's James Webb Space Telescope is now scheduled to launch Dec. 18 on an Ariane 5. 
                             <br> ESA - D. Ducros </br>
@@ -76,8 +80,6 @@
                             <i class="fa fa-caret-right"></i>
                             </a>
                             </p>
-
-
                     </div>
                     </div>
                     <!-- Next and previous buttons -->
@@ -92,98 +94,103 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
                 </div>
+            <!-- Space News Divider -Latest  -->
             <div class="space-news-divider-upper">
                 <button class="topic-btn">
                 <span>Latest space News</span>
                 </button>
             </div>
+            <!-- All Space News article have same layout they contain image and description about the event  -->
+            <!-- Space News article card 1  -->
             <div class ="card" id ="space-news-1">
                 <div class ="card-body">
-                <img class ="card-image" src="/media/images/space-news/space-news-1.svg" alt="">
+                <img class ="card-image" src="/assets/img/space-news/space-news-1.svg" alt="rocket take off image">
                 <h2 class="card-title">Space News |28 Feb 2021|<br> Launch companies optimistic about future demand</h2>
-                <p class="card-description">A partial rebound in the GEO market and emerging demand for satellite megaconstellations has Arianespace optimistic about the business case for the Ariane 6.</p>
+                <p class="card-description">A partial rebound in the GEO market and emerging demand for satellite mega constellations has Arianespace optimistic about the business case for the Ariane 6.</p>
             </div>
             <a href="https://spacenews.com/launch-companies-optimistic-about-future-demand/" class="card-link">Read Full Article</a>
             </div>
+            <!-- Space News article card 2  -->
             <div class ="card" id ="space-news-2">
                 <div class ="card-body">
-                <img class ="card-image" src="/media/images/space-news/space-news-2.svg" alt="">
+                <img class ="card-image" src="/assets/img/space-news/space-news-2.svg" alt="ChinaSat-9B broadcast satellite image">
                 <h2 class="card-title">Space News |28 Feb 2021|<br> China launches ChinaSat-9B broadcast satellite</h2>
                 <p class="card-description">Liftoff of the Long March 3B from Xichang, carrying the ChinaSat-9B (Zhongxing-9B) communications satellite, September 9, 2021</p>
             </div>
             <a href="https://spacenews.com/china-launches-chinasat-9b-broadcast-satellite/" class="card-link">Read Full Article</a>
             </div>
+            <!-- Space News article card 3 -->
             <div class ="card" id ="space-news-3">
                 <div class ="card-body">
-                <img class ="card-image" src="/media/images/space-news/space-news-3.svg" alt="">
+                <img class ="card-image" src="/assets/img/space-news/space-news-3.svg" alt="3D printed rocket image">
                 <h2 class="card-title">Space News |28 Feb 2021|<br> Korean consortium invested $50 million in US launch startup Relativity Space</h2>
                 <p class="card-description">A consortium of three South Korean companies invested $50 million in American 3D-printed rocket startup Relativity Space.</p>
             </div>
             <a href="https://spacenews.com/korean-consortium-invested-50-million-in-us-launch-startup-relativity-space/" class="card-link">Read Full Article</a>
             </div>
+            <!-- Space News article card 4 -->
             <div class ="card" id ="space-news-4">
                 <div class ="card-body">
-                <img class ="card-image" src="/media/images/space-news/space-news-4.svg" alt="">
+                <img class ="card-image" src="/assets/img/space-news/space-news-4.svg" alt="Rocket launch image">
                 <h2 class="card-title">Space News |28 Feb 2021|<br>Launch providers argue against a “magic number” for price to orbit </h2>
                 <p class="card-description">Rocket Lab says its customers are focused less on a specific price per kilogram and instead willing to pay a premium for getting payloads into a specific orbit at a certain time.</p>
             </div>
             <a href="https://spacenews.com/launch-providers-see-no-magic-number-for-price-to-orbit/" class="card-link">Read Full Article</a>
             </div>
-    
+            <!-- Space News Divider -Other space News  -->
             <div class="space-news-divider-lower">
                 <button class="topic-btn">
                 <span>Latest space Releases</span>
                 </button>
             </div>
-    
+            <!-- Space News article card 5 -->
             <div class ="card" id ="space-news-5">
                 <div class ="card-body">
-                <img class ="card-image" src="/media/images/space-news/space-news-5.svg" alt="">
+                <img class ="card-image" src="/assets/img/space-news/space-news-5.svg" alt="Virgin Rocket launching image">
                 <h2 class="card-title">Space News |28 Feb 2021| <br> launch companies don’t foresee price war  </h2>
                 <p class="card-description">Rocket Lab and Virgin Orbit say they're not worried about downward pressure on launch prices, as newcomers currently quoting low launch prices have yet to grasp how capital-intensive the launch industry is</p>
             </div>
             <a href="https://spacenews.com/small-launch-companies-dont-foresee-price-war/" class="card-link">Read Full Article</a>
             </div>
+            <!-- Space News article card 6 -->
             <div class ="card" id ="space-news-6">
                 <div class ="card-body">
-                <img class ="card-image" src="/media/images/space-news/space-news-6.svg" alt="">
+                <img class ="card-image" src="/assets/img/space-news/space-news-6.svg" alt="Aevum drone garage">
                 <h2 class="card-title">Space News |28 Feb 2021| <br>Aevum unveils smallsat-launching drone aircraft</h2>
                 <p class="card-description">Aevum help a virtual rollout event Dec. 3 for Ravn X which the company described as the largest drone ever built. Ravn X will serve as the launch platform for a two-stage rocket capable of placing up to several hundred kilograms into low Earth orbit.</p>
             </div>
             <a href="https://spacenews.com/aevum-unveils-autonomous-aircraft-that-launches-rockets/" class="card-link">Read Full Article</a>
             </div>
+            <!-- Space News article card 7 -->
             <div class ="card" id ="space-news-7">
                 <div class ="card-body">
-                <img class ="card-image" src="/media/images/space-news/space-news-7.svg" alt="">
+                <img class ="card-image" src="/assets/img/space-news/space-news-7.svg" alt="Rocket lab rocket launch">
                 <h2 class="card-title">Space News |28 Feb 2021|  <br> Rocket Lab to launch Finnish cubesat </h2>
                 <p class="card-description">A Rocket Lab Electron will launch AuroraSat-1, a cubesat that will test thrusters and a "microtether" for deorbiting. Credit: Aurora Propulsion Technologies</p>
             </div>
             <a href="https://spacenews.com/rocket-lab-to-launch-finnish-cubesat/" class="card-link">Read Full Article</a>
             </div>
+            <!-- Space News article card 8 -->
             <div class ="card" id ="space-news-8">
                 <div class ="card-body">
-                <img class ="card-image" src="/media/images/space-news/space-news-8.svg" alt="">
+                <img class ="card-image" src="/assets/img/space-news/space-news-8.svg" alt="DARPA satellite image">
                 <h2 class="card-title">Space News |28 Feb 2021| <br> Lab to launch DARPA satellite </h2>
                 <p class="card-description">A Rocket Lab Electron lifts off Dec. 16 from the company's Launch Complex 1 in New Zealand. The next Electron launch is now scheduled for late February, carrying an experimental smallsat for DARPA.</p>
             </div>
             <a href="https://spacenews.com/rocket-lab-to-launch-darpa-satellite/" class="card-link">Read Full Article</a>
             </div>
-    
-    
-    
-    
-    
-    
-        <!-- Below is the common footer container -->
+
+            <!-- Below is the common footer container -->
             <footer>
+                <!-- A footer container  -->
                 <div class="footer-container">
-                    <!-- this is for the left side of the footer container contains logo and social media info -->
+                    <!-- footer container is divided in two parts left and right part-->
+                    <!-- left footer container hosts company logo and social media -->
+                    <!-- left footer starts here  -->
                     <div class="left-col">
-                        <!-- Company logo at footer -->
-                        <div id= "footer-logo">
-                            <i class="fas fa-glasses"></i> GEEKÈD 
-                        </div>  
-                        <!-- Social Media info -->
+                    <div id= "footer-logo">
+                    <i class="fas fa-glasses"></i> GEEKÈD 
+                    </div>  
                     <div class="social-media">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -191,26 +198,26 @@
                         <a href="#"><i class="fab fa-youtube"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <p class="rights-text">© 2020 Created By DarkCode All Rights Reserved.</p>
-                </div>
-                <!-- this is for the right side  side of the footer container and contains newsletter subscription -->
-                <div class="right-col">
+                    <p class="rights-text">© 2020 Created By Geeked Incorporated All Rights Reserved.</p>
+                    </div>
+                    <!-- left footer ends here  -->
+                    <!-- right footer starts here  -->
+                    <!-- right footer contains a subscription button with email as the input field -->
+                    <div class="right-col">
                     <h1>Our Newsletter</h1>
                     <div class="border"></div>
                     <p>Enter Your Email to get our news and updates.</p>
                     <form action="" class="newsletter-form">
-                    <input type="text" class="txtb" placeholder="Enter Your Email">
-                    <input type="submit" class="submit-btn" value="submit">
+                        <input type="text" class="txtb" placeholder="Enter Your Email">
+                        <input type="submit" class="submit-btn" value="submit">
                     </form>
-                </div>
+                    </div>
+                    <!-- right footer ends here  -->
                 </div>
             </footer>
-        <!-- end of footer container -->
-                
-    
-            
+            <!-- end of footer container -->    
         </div >
     
-        <script src=/scripts/space.js></script> 
+        <script src=/assets/js/space.js></script> 
     </body>
 </html>

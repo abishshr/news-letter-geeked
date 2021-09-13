@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- This head section contains all the invisible information about the page -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/common.css">
-    <link rel="stylesheet" href="/stylesheets/about.css">
+    <meta name="description" content="This is a website for a community of people interested in knowing the latest news in tech ,space and comics">
+    <meta name="author" content="UOL">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="600">
+    <meta name="keywords" content="Latest News in Tech, space and comics ">
+    <!-- Below are  two stylesheet 
+    1.) The common one which includes common styling like navigation bar ,header etc 
+    which are used for all the pages 
+    2.) about.css has styling specific to index page-->
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/about.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-
-    <title>Document</title>
+    <title>GEEKÈD -About us</title>
 </head>
 <body>
     <div class="container">
@@ -30,14 +39,16 @@
         </nav>
         <!-- Common Header and navigation bar ends here-->
         <div id="cubeContainer">
+            <!-- Container to hold all the persons  -->
             <div id="cubeWrapper">
                 <div class="head">
-                    <h1>MEET THE TEAM</h1>
+                    <h1>Meet our Amazing Team @ GEEKÈD</h1>
                 </div>
                 <div id="cubes">
+                    <!-- Name ,Job title and Social media contact for Person 1 -->
                     <div class="cube p2">
                         <div class="name">
-                            <h1>Brain</h1>
+                            <h1>Anastasia</h1>
                             <p>Manager</p>
                         </div>
                         <div class="innerBorder"></div>
@@ -51,10 +62,11 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- Name ,Job title and Social media contact for Person 2 -->
                     <div class="cube p1">
                         <div class="name">
-                            <h1>Jessica</h1>
-                            <p>Community Manager</p>
+                            <h1>Natasha</h1>
+                            <p>Software Developer</p>
                         </div>
                         <div class="innerBorder"></div>
                         <div class="darken"></div>
@@ -67,9 +79,10 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- Name ,Job title and Social media contact for Person 3 -->
                     <div class="cube p3">
                         <div class="name">
-                            <h1>Chris</h1>
+                            <h1>Brian</h1>
                             <p>Web Developer</p>
                         </div>
                         <div class="innerBorder"></div>
@@ -83,10 +96,11 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- Name ,Job title and Social media contact for Person 4 -->
                     <div class="cube p4">
                         <div class="name">
-                            <h1>James</h1>
-                            <p>UX / UI Designer</p>
+                            <h1>Chris</h1>
+                            <p>Data Engineer</p>
                         </div>
                         <div class="innerBorder"></div>
                         <div class="darken"></div>
@@ -99,10 +113,11 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- Name ,Job title and Social media contact for Person 5 -->
                     <div class="cube p5">
                         <div class="name">
-                            <h1>Rebecca</h1>
-                            <p>Graphics Designer</p>
+                            <h1>Mathew</h1>
+                            <p>Full Stack Developer</p>
                         </div>
                         <div class="innerBorder"></div>
                         <div class="darken"></div>
@@ -115,9 +130,10 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- Name ,Job title and Social media contact for Person 6 -->
                     <div class="cube p6">
                         <div class="name">
-                            <h1>James</h1>
+                            <h1>Jenny</h1>
                             <p>UX / UI Designer</p>
                         </div>
                         <div class="innerBorder"></div>
@@ -137,42 +153,41 @@
         </div>
         <!-- Below is the common footer container -->
         <footer>
-            <div class="footer-container">
-                <!-- this is for the left side of the footer container contains logo and social media info -->
+            <!-- A footer container  -->
+              <div class="footer-container">
+                <!-- footer container is divided in two parts left and right part-->
+                <!-- left footer container hosts company logo and social media -->
+                <!-- left footer starts here  -->
                 <div class="left-col">
-                    <!-- Company logo at footer -->
-                    <div id= "footer-logo">
-                        <i class="fas fa-glasses"></i> GEEKÈD 
-                    </div>  
-                    <!-- Social Media info -->
-                <div class="social-media">
+                  <div id= "footer-logo">
+                  <i class="fas fa-glasses"></i> GEEKÈD 
+                  </div>  
+                  <div class="social-media">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                  <p class="rights-text">© 2020 Created By Geeked Incorporated All Rights Reserved.</p>
                 </div>
-                <p class="rights-text">© 2020 Created By DarkCode All Rights Reserved.</p>
-            </div>
-            <!-- this is for the right side  side of the footer container and contains newsletter subscription -->
-            <div class="right-col">
-                <h1>Our Newsletter</h1>
-                <div class="border"></div>
-                <p>Enter Your Email to get our news and updates.</p>
-                <form action="" class="newsletter-form">
-                <input type="text" class="txtb" placeholder="Enter Your Email">
-                <input type="submit" class="submit-btn" value="submit">
-                </form>
-            </div>
-            </div>
+                <!-- left footer ends here  -->
+                <!-- right footer starts here  -->
+                <!-- right footer contains a subscription button with email as the input field -->
+                <div class="right-col">
+                  <h1>Our Newsletter</h1>
+                  <div class="border"></div>
+                  <p>Enter Your Email to get our news and updates.</p>
+                  <form action="" class="newsletter-form">
+                    <input type="text" class="txtb" placeholder="Enter Your Email">
+                    <input type="submit" class="submit-btn" value="submit">
+                  </form>
+                </div>
+                <!-- right footer ends here  -->
+              </div>
         </footer>
-    <!-- end of footer container -->
-            
-
-        
+        <!-- end of footer container -->
     </div >
-
-
-
+    <script src="/assets/js/script.js"></script> 
 </body>
 </html>
