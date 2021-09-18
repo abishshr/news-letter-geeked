@@ -2,9 +2,47 @@
 
 /* Header with company logo styling  */
 
-#header-logo {
+#header {
   background:  #333;
   grid-area: header;
+  color: #f2f2f2;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+#s-font{
+  margin-left: .6em;
+  font-size: .3em;
+  color: #fc5c65;
+  font-weight: normal;
+  font-family: 'Poppins', sans-serif;
+}
+#m-font{
+  font-size: .6em;
+  color: #fc5c65;
+  font-family: 'Poppins', sans-serif;
+  
+  font-weight: normal;
+  
+}
+#l-font{
+  font-size: .9em;
+  color: #fc5c65;
+  font-weight: normal;
+}
+#font-adjuster a{
+  font-weight:  normal;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  
+}
+
+#header-logo {
+  background:  #333;
   color: #f2f2f2;
   text-align: center;
 

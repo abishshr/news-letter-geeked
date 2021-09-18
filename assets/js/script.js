@@ -6,6 +6,26 @@ function hamburgerFunc() {
 	else {x.className = "nav";}
 }
 
+var containerEle = document.getElementById('container-id');
+function smallFontSize() {
+	txt = document.getElementById('container-id');
+    style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+    currentSize = parseFloat(style);
+    txt.style.fontSize = (currentSize - 1) + 'px';
+}
+
+function largeFontSize() {
+	txt = document.getElementById('container-id');
+    style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+    currentSize = parseFloat(style);
+    txt.style.fontSize = (currentSize + 2) + 'px';
+}
+function normalFontSize() {
+	txt = document.getElementById('container-id');
+    style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+    currentSize = parseFloat(style);
+    txt.style.fontSize = (currentSize + 1) + 'px';
+}
 
 // Function to automate vertical scroll
 var slideIndex = 1;
