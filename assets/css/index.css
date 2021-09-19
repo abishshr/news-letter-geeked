@@ -278,8 +278,30 @@ body {
     font-family: 'Poppins', 'Inter', sans-serif;
     background-color: rgba(0, 0, 0, 0.3);
   }
+/* Description text */
+.text p{
+  color: #f2f2f2;
+  position: absolute;
+  margin: 1em;
+  margin-right: 3em;
+  bottom: .5em;
+  text-align: left;
+}
+/* Heading */
+.text h3{
+  color: #f2f2f2;
+  position: absolute;
+  bottom: 3.5em;
+  width: 100%;
+  text-align: left;
+  margin: 1em;
+}
 
-
+/* Hyperlink styling  */
+.text a {
+  color: blue;
+  font-size: 12px;
+}
   /* Number text (1/3 etc) styling on top left to indicate the slide */
   .number-text {
     color: white;

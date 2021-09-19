@@ -11,7 +11,7 @@ body {
 A CSS Grid layout styling is chosen   */
 .container{
     display: grid;
-    height: 125vh;
+    height: 105vh;
     grid-template-columns:1fr  ;
     grid-template-rows: .04fr .02fr auto .05fr ;
     grid-template-areas:
@@ -22,7 +22,7 @@ A CSS Grid layout styling is chosen   */
     grid-gap: 0.2rem;
     font-weight: 800;
     font-size: 15px;
-    color: #004d40;
+    color: grey;
     text-align: center;
     padding-left: .2em;
     padding-right: .2em;
@@ -104,7 +104,7 @@ A CSS Grid layout styling is chosen   */
 /* Styling for smaller phone devices */
 @media only screen and (max-width: 550px) {
   .container {
-    height: 185vh;
+    height: 205vh;
     grid-template-columns: 1fr;
     grid-template-rows: .04fr .01fr auto .01fr ;
     grid-template-areas:
@@ -118,9 +118,10 @@ A CSS Grid layout styling is chosen   */
     position: absolute;
     max-width: 20em;
     width: 100%;
-    height: 60%;
+    min-height: 20em;
     margin-top: 5em;
     margin-bottom: 1em;
+    overflow: scroll;
   
   }
   .wrapper .btn input[type="submit"]{
