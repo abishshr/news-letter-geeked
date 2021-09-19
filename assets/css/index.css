@@ -696,6 +696,19 @@ opacity: 1;
 .footer-container{
   margin-bottom: 0em;
 }
+.text{
+  width: 95%;
+}
+.text p{
+  color: #f2f2f2;
+  font-size: 12px;
+}
+.text h3{
+
+font-size: 13px; 
+bottom: 6.5em;
+
+}
 }
 
   

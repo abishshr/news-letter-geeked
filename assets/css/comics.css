@@ -21,14 +21,16 @@ a {
 h3,h2{
     font-family: 'Poppins', 'Inter', sans-serif;
     font-weight: bold;
-    font-size:medium;
+    font-size:large;
+    color: white;
  
 }
 /* Styling for the paragraph */
 p{
     font-family: 'Poppins', 'Inter', sans-serif;
     font-weight: normal;
-    font-size: small;
+    font-size: medium;
+    color:white;
     
 
 }
@@ -148,7 +150,7 @@ p{
     background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
+/* Caption text
 .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -160,7 +162,7 @@ p{
     text-align: left;
     font-family: 'Poppins', 'Inter', sans-serif;
     background-color: rgba(0, 0, 0, 0.3);
-}
+} */
 /* Description text */
 .text p{
     color: #f2f2f2;
@@ -356,4 +358,15 @@ background-color: #717171;
 .card:hover {
     transform: scale(1); 
     }
+/* slideshow container text styling  */
+.text p{
+    color: #f2f2f2;
+    font-size: 12px;
+}
+.text h3{
+
+font-size: 13px; 
+bottom: 6.5em;
+
+}
 }
