@@ -9,6 +9,38 @@ body {
     }
 /*This is the main container/wrapper  which contains all the div/grids 
   A CSS Grid layout styling is chosen   */
+
+/* importing custom font */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+/* link styling */
+a {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: medium;
+    color:  blue;
+    text-decoration: none;
+
+}
+/* Styling for the heading */
+h1 {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-weight: 300;
+}
+h3{
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-weight: bold;
+    font-size:large;
+    color: white;
+}
+/* Styling for the paragraph */
+p{
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: medium;
+    color:white;
+
+}
+
 .container{
     display: grid;
     height: 145vh;
@@ -115,34 +147,44 @@ body {
     border-radius: 1px 0 0 1px;
 }
 
-      /* On hover, add a black background color with a little bit see-through */
+/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
 
-      /* Description text */
+/* Description text */
 .text p{
     color: #f2f2f2;
-    font-size: 15px;
-    padding: 0px 15px;
     position: absolute;
+    margin: 1em;
+    margin-right: 3em;
     bottom: .5em;
+    width: 90%;
+    text-align: left;
+}
+/* Heading */
+.text h3{
+    color: #f2f2f2;
+    position: absolute;
+    bottom: 6.5em;
     width: 100%;
     text-align: left;
-    font-family: 'Poppins', 'Inter', sans-serif;
-    font-weight: normal;
+    margin: 1em;
 }
+
+/* Hyperlink styling  */
 .text a {
-    color: #f2f2f2;
+    color: blue;
     font-size: 12px;
 }
 /* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
+.number-text {
+    color: white;
     position: absolute;
-    top: 0;
+    margin: 1em;
+    z-index: 9;
+
+    
 }
 /* The dots/bullets/indicators */
 .dot {
@@ -157,12 +199,11 @@ body {
     margin-top: 0em;
     
 }
-    
+/* Hover effect  */
 .active, .dot:hover {
     background-color: #717171;
 }
-/*  main slideshow for the space news styling ends here  */   
-
+/*  <--main slideshow for the space news styling ends here --> */   
 /* These are all the space news article  */
 #space-news-1{
     grid-area:space-news-1;
@@ -201,7 +242,7 @@ body {
 }
 /* This is the common styling for all the article card  */
 .card{
-    overflow: hidden;
+    overflow:scroll;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -212,7 +253,11 @@ body {
     margin:2em;
     background-color: white;
     min-height: 43em;
+    max-height: auto;
+    /* min-width: 35em; */
+
 }
+/* hover effect animation  */
 .card:hover {
     transform: scale(1.2); 
 }
@@ -235,10 +280,11 @@ body {
     color: black;
     text-align: center;
     margin: 1em;
+    
 }
 .card-link{
     text-decoration: none;
-    color :black;
+    color :blue;
     font-family: 'Poppins', 'Inter', sans-serif;
     font-size: 16px;
     margin-bottom: 2em;
@@ -309,4 +355,14 @@ body {
     .right-col{
         margin-left: 2em;
     }
+    .text p{
+        color: #f2f2f2;
+        font-size: 12px;
     }
+    .text h3{
+    
+    font-size: 13px; 
+    bottom: 6.5em;
+    
+    }
+}

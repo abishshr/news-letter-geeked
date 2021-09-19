@@ -15,6 +15,7 @@
 
 }
 
+/* Custom Font adjuster -small font */
 #s-font{
   margin-left: .6em;
   font-size: .3em;
@@ -22,54 +23,49 @@
   font-weight: normal;
   font-family: 'Poppins', sans-serif;
 }
+/* Custom Font adjuster -medium font */
 #m-font{
   font-size: .6em;
   color: #fc5c65;
   font-family: 'Poppins', sans-serif;
-  
-  font-weight: normal;
-  
+  font-weight: normal; 
 }
+/* Custom Font adjuster -large font */
 #l-font{
   font-size: .9em;
   color: #fc5c65;
   font-weight: normal;
 }
+
 #font-adjuster a{
   font-weight:  normal;
   font-family: 'Poppins', 'Inter', sans-serif;
-  
 }
 
+/* Company logo at the header  */
 #header-logo {
   background:  #333;
   color: #f2f2f2;
   text-align: center;
-
   text-decoration: none;
   font-size: 35px;
   font-family: 'Poppins', sans-serif;
-
-
-
 }
 #header-logo a {
 color: #f2f2f2;
   text-align: center;
-
   text-decoration: none;
   font-size: 35px;
   font-family: 'Poppins', sans-serif;
 }
 #header-logo span {
   text-align: center;
-
   text-decoration: none;
   font-size: 35px;
   font-family: 'Poppins', sans-serif;
 }
 
-
+/* navigation bar styling */
 nav {
   grid-area: nav;
   border-radius: var(--main-radius);
@@ -80,8 +76,6 @@ nav {
 
 /* Style the links inside the navigation bar */
 nav a {
-  /* float: left; */
-  /* display: block; */
   display: inline-block;
   color: #f2f2f2;
   text-align: center;
@@ -97,7 +91,7 @@ nav a:hover {
 }
 /* Hide the link that should open and close the nav on small screens */
 nav .icon {
-display: none;
+  display: none;
 }
 
 
@@ -106,7 +100,6 @@ display: none;
 footer{
   background: #333;
   padding-top: 0px ;
-  /* max-height: 200px; */
   grid-area: footer;
   color: #f2f2f2;
   padding-bottom: 50px;
