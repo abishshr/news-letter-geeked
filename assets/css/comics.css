@@ -6,6 +6,32 @@ body {
     font-family: "Inter", sans-serif;
     margin: 0;
     }
+
+/* link styling */
+a {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: small;
+    color:  blue;
+    text-decoration: none;
+
+}
+/* Styling for the heading */
+
+h3,h2{
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-weight: bold;
+    font-size:medium;
+ 
+}
+/* Styling for the paragraph */
+p{
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: small;
+    
+
+}
 /*This is the main container/wrapper  which contains all the div/grids 
   A CSS Grid layout styling is chosen   */
 .container{
@@ -13,7 +39,6 @@ body {
     height: 115vh;
     grid-template-columns:1fr 1fr 1fr 1fr;
     grid-template-rows: .04fr .02fr auto .01fr auto .01fr auto .05fr ;
-    /* grid-template-rows: auto auto auto auto ; */
     grid-template-areas:
         "header header header header "
         "nav nav nav nav"
@@ -57,6 +82,7 @@ body {
     font-family: 'Poppins', 'Inter', sans-serif;
     border-radius: 10px;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+    z-index: -1;
 
 }
 /* Main Comics News Slideshow */
@@ -129,23 +155,46 @@ body {
     padding: 0px 15px;
     position: absolute;
     bottom: .5em;
-    width: 100%;
+    width: 98%;
+    height :30%;
     text-align: left;
     font-family: 'Poppins', 'Inter', sans-serif;
-    font-weight: 10;
+    background-color: rgba(0, 0, 0, 0.3);
 }
-.text a {
+/* Description text */
+.text p{
     color: #f2f2f2;
-    font-size: 12px;}
+    position: absolute;
+    margin: 1em;
+    margin-right: 3em;
+    bottom: .5em;
+    width: 90%;
+    text-align: left;
+}
+/* Heading */
+.text h3{
+    color: #f2f2f2;
+    position: absolute;
+    bottom: 6.5em;
+    width: 100%;
+    text-align: left;
+    margin: 1em;
+}
+
+/* Hyperlink styling  */
+.text a {
+    color: blue;
+    font-size: 12px;
+}
 
   /* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
+.number-text {
+    color: white;
     position: absolute;
-    top: 0;
+    margin: 1em;
+    z-index: 9;  
 }
+  
   /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
@@ -214,6 +263,8 @@ background-color: #717171;
     font-family: 'Poppins', 'Inter', sans-serif;
     min-height: 43em;
     background-color: white;
+    overflow:scroll;
+   
 }
 
 .card:hover {
@@ -226,25 +277,18 @@ background-color: #717171;
 }
 .card-title{
     font-family: 'Poppins', 'Inter', sans-serif;
-    font-size: 15px;
-    font-weight: bolder;
     color: black;
     text-align: center;
 }
 .card-description{
     font-family: 'Poppins', 'Inter', sans-serif;
-    font-size: 12px;
-    font-weight: normal;
     color: black;
     text-align: center;
     margin: 1em;
 }
 
 .card-link{
-    text-decoration: none;
-    color :black;
     font-family: 'Poppins', 'Inter', sans-serif;
-    font-size: 16px;
     margin-bottom: 2em;
 }
 /* Common article styling for all cards ends here */

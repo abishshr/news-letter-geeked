@@ -16,16 +16,28 @@
     2.) about.css has styling specific to index page-->
     <link rel="stylesheet" href="/assets/css/common.css">
     <link rel="stylesheet" href="/assets/css/about.css">
+    <!-- external fonts are linked here  -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <title>GEEKÈD -About us</title>
 </head>
 <body>
-    <div class="container">
-        <!-- Header Logo  -->
-        <div id="header-logo">
-            <a href=/index.html>
-            <i class="fa fas fa-glasses"><span> GEEKÈD</span>   </i> 
+    <!-- Main Container which contains all elements  -->
+    <div class="container" id="container-id">
+        <!-- Common Header and navigation bar for all the pages -->
+        <!-- Header  -->
+        <div id="header">
+            <!-- Three font buttons are added so that user can adjust font size -small medium and large  -->
+            <div id ="font-adjuster"> 
+            <a id ="s-font" href="javascript:smallFontSize();"><i class="fas fa-font"></i></a>
+            <a id ="m-font" href="javascript:mediumFontSize();"><i class="fas fa-font"></i></a>
+            <a id ="l-font" href="javascript:largeFontSize();"><i class="fas fa-font"></i></a>
+            </div>
+            <!-- Comany Logo  -->
+            <div id="header-logo"> 
+            <a href="/index.html">
+            <i class="fa fas fa-glasses"><span> GEEKÈD</span></i> 
+            </div>
         </div>
         <!-- Navigation bar which has all the pages to navigate to  -->
         <nav class="nav" id="nav">
@@ -48,13 +60,14 @@
                     <!-- Name ,Job title and Social media contact for Person 1 -->
                     <div class="cube p2">
                         <div class="name">
-                            <h1>Anastasia</h1>
-                            <p>Manager</p>
+                            <h1 class="text">Anastasia</h1>
+                            <p class="text">Manager</p>
                         </div>
                         <div class="innerBorder"></div>
                         <div class="darken"></div>
                         <div class="content">
                             <ul>
+                                <!-- Social media button using Font Awesome  -->
                                 <li><a href=""><span class="fab fa-twitter"></span></a></li>
                                 <li><a href=""><span class="fab fa-facebook-f"></span></a></li>
                                 <li><a href=""><span class="fab fa-instagram"></span></a></li>
@@ -65,13 +78,14 @@
                     <!-- Name ,Job title and Social media contact for Person 2 -->
                     <div class="cube p1">
                         <div class="name">
-                            <h1>Natasha</h1>
-                            <p>Software Developer</p>
+                            <h1 class="text">Natasha</h1>
+                            <p class="text">Software Developer</p>
                         </div>
                         <div class="innerBorder"></div>
                         <div class="darken"></div>
                         <div class="content">
                             <ul>
+                                <!-- Social media button using Font Awesome  -->
                                 <li><a href=""><span class="fab fa-twitter"></span></a></li>
                                 <li><a href=""><span class="fab fa-facebook-f"></span></a></li>
                                 <li><a href=""><span class="fab fa-instagram"></span></a></li>
@@ -82,13 +96,14 @@
                     <!-- Name ,Job title and Social media contact for Person 3 -->
                     <div class="cube p3">
                         <div class="name">
-                            <h1>Brian</h1>
-                            <p>Web Developer</p>
+                            <h1 class="text">Brian</h1>
+                            <p class="text">Web Developer</p>
                         </div>
                         <div class="innerBorder"></div>
                         <div class="darken"></div>
                         <div class="content">
                             <ul>
+                                <!-- Social media button using Font Awesome  -->
                                 <li><a href=""><span class="fab fa-twitter"></span></a></li>
                                 <li><a href=""><span class="fab fa-facebook-f"></span></a></li>
                                 <li><a href=""><span class="fab fa-instagram"></span></a></li>
@@ -99,13 +114,14 @@
                     <!-- Name ,Job title and Social media contact for Person 4 -->
                     <div class="cube p4">
                         <div class="name">
-                            <h1>Chris</h1>
-                            <p>Data Engineer</p>
+                            <h1 class="text">Chris</h1>
+                            <p class="text">Data Engineer</p>
                         </div>
                         <div class="innerBorder"></div>
                         <div class="darken"></div>
                         <div class="content">
                             <ul>
+                                <!-- Social media button using Font Awesome  -->
                                 <li><a href=""><span class="fab fa-twitter"></span></a></li>
                                 <li><a href=""><span class="fab fa-facebook-f"></span></a></li>
                                 <li><a href=""><span class="fab fa-instagram"></span></a></li>
@@ -116,13 +132,14 @@
                     <!-- Name ,Job title and Social media contact for Person 5 -->
                     <div class="cube p5">
                         <div class="name">
-                            <h1>Mathew</h1>
-                            <p>Full Stack Developer</p>
+                            <h1 class="text">Mathew</h1>
+                            <p class="text">Full Stack Developer</p>
                         </div>
                         <div class="innerBorder"></div>
                         <div class="darken"></div>
                         <div class="content">
                             <ul>
+                                <!-- Social media button using Font Awesome  -->
                                 <li><a href=""><span class="fab fa-twitter"></span></a></li>
                                 <li><a href=""><span class="fab fa-facebook-f"></span></a></li>
                                 <li><a href=""><span class="fab fa-instagram"></span></a></li>
@@ -133,13 +150,14 @@
                     <!-- Name ,Job title and Social media contact for Person 6 -->
                     <div class="cube p6">
                         <div class="name">
-                            <h1>Jenny</h1>
-                            <p>UX / UI Designer</p>
+                            <h1 class="text">Jenny</h1>
+                            <p class="text">UX / UI Designer</p>
                         </div>
                         <div class="innerBorder"></div>
                         <div class="darken"></div>
                         <div class="content">
                             <ul>
+                                <!-- Social media button using Font Awesome  -->
                                 <li><a href=""><span class="fab fa-twitter"></span></a></li>
                                 <li><a href=""><span class="fab fa-facebook-f"></span></a></li>
                                 <li><a href=""><span class="fab fa-instagram"></span></a></li>
@@ -162,6 +180,7 @@
                   <div id= "footer-logo">
                   <i class="fas fa-glasses"></i> GEEKÈD 
                   </div>  
+                  <!-- Social media button using Font Awesome  -->
                   <div class="social-media">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -169,6 +188,7 @@
                     <a href="#"><i class="fab fa-youtube"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                   </div>
+                  <!-- company copyright info -->
                   <p class="rights-text">© 2020 Created By Geeked Incorporated All Rights Reserved.</p>
                 </div>
                 <!-- left footer ends here  -->
@@ -178,6 +198,7 @@
                   <h1>Our Newsletter</h1>
                   <div class="border"></div>
                   <p>Enter Your Email to get our news and updates.</p>
+                  <!-- email subscription form  -->
                   <form action="" class="newsletter-form">
                     <input type="text" class="txtb" placeholder="Enter Your Email">
                     <input type="submit" class="submit-btn" value="submit">
@@ -188,6 +209,7 @@
         </footer>
         <!-- end of footer container -->
     </div >
-    <script src="/assets/js/script.js"></script> 
+    <!-- javascript external file is linked here -->
+    <script src="/assets/js/about.js"></script> 
 </body>
 </html>

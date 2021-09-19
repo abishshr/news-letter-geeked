@@ -7,7 +7,51 @@ function hamburgerFunc() {
 	else {x.className = "nav";}
 }
 
-
+// For Setting the Font size to small  for all the article box and slideshow text
+function smallFontSize() {
+    var elements_c =document.getElementsByClassName('contact')
+    var elements_b =document.getElementsByClassName('btn')
+  
+    for(var i=0; i < elements_c.length; i++){
+      var element = elements_c[i]
+      element.style.padding = "small"
+    for(var i=0; i < elements_b.length; i++){
+      var element = elements_b[i]
+      element.style.fontSize = "small"
+    }
+    
+  }
+}
+  // For Setting the Font size to Large  for all the article box and slideshow text
+function mediumFontSize() {
+    var elements_c =document.getElementsByClassName('contact')
+    var elements_b =document.getElementsByClassName('btn')
+  
+    for(var i=0; i < elements_c.length; i++){
+      var element = elements_c[i]
+      element.style.padding = "medium"
+    }
+    for(var i=0; i < elements_b.length; i++){
+      var element = elements_b[i]
+      element.style.fontSize = "medium"
+    }
+    
+  }
+  // For Setting the Font size to Large  for all the article box and slideshow text
+function largeFontSize() {
+    var elements_c =document.getElementsByClassName('contact')
+    var elements_b =document.getElementsByClassName('btn')
+  
+    for(var i=0; i < elements_c.length; i++){
+      var element = elements_c[i]
+      element.style.padding = "x-large"
+    }
+    for(var i=0; i < elements_b.length; i++){
+      var element = elements_b[i]
+      element.style.fontSize = "x-large"
+    }
+    
+  }
 
 // Validate Method for form submission 
 function validate(){

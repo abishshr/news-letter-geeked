@@ -6,25 +6,165 @@ function hamburgerFunc() {
 	else {x.className = "nav";}
 }
 
-var containerEle = document.getElementById('container-id');
+// For Setting the Font size to small for all the article box and slideshow text
 function smallFontSize() {
-	txt = document.getElementById('container-id');
-    style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
-    currentSize = parseFloat(style);
-    txt.style.fontSize = (currentSize - 1) + 'px';
+	var elements_tt =document.getElementsByClassName('ticker-text')
+	var elements_t =document.getElementsByClassName('title')
+	var elements_d =document.getElementsByClassName('detail')
+	var elements_st =document.getElementsByClassName('slide-text')
+	var elements_btn =document.getElementsByClassName('topic-btn')
+	var elements_bt =document.getElementsByClassName('button')
+	var elements_nbt =document.getElementsByClassName('number-text')
+	var elements_day =document.getElementsByClassName('day')
+	var elements_month =document.getElementsByClassName('month')
+	var elements_year =document.getElementsByClassName('year')
+	for(var i=0; i < elements_tt.length; i++){
+		var element = elements_tt[i]
+		element.style.fontSize = "small"
+	}
+	for(var i=0; i < elements_t.length; i++){
+		var element = elements_t[i]
+		element.style.fontSize = "small"
+	}
+	for(var i=0; i < elements_d.length; i++){
+		var element = elements_d[i]
+		element.style.fontSize = "small"
+	}
+	for(var i=0; i < elements_st.length; i++){
+		var element = elements_st[i]
+		element.style.fontSize = "small"
+	}
+	for(var i=0; i < elements_btn.length; i++){
+		var element = elements_btn[i]
+		element.style.fontSize = "small"
+	}
+	for(var i=0; i < elements_nbt.length; i++){
+		var element = elements_nbt[i]
+		element.style.fontSize = "small"
+	}
+	for(var i=0; i < elements_bt.length; i++){
+		var element = elements_bt[i]
+		element.style.fontSize = "small"
+	}
+	for(var i=0; i < elements_day.length; i++){
+		var element = elements_day[i]
+		element.style.fontSize = "small"
+	}
+	for(var i=0; i < elements_month.length; i++){
+		var element = elements_month[i]
+		element.style.fontSize = "small"
+	}
+	for(var i=0; i < elements_year.length; i++){
+		var element = elements_year[i]
+		element.style.fontSize = "small"
+	}
 }
 
-function largeFontSize() {
-	txt = document.getElementById('container-id');
-    style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
-    currentSize = parseFloat(style);
-    txt.style.fontSize = (currentSize + 2) + 'px';
+// For Setting the Font size to medium for all the article box and slideshow text
+function mediumFontSize() {
+	var elements_tt =document.getElementsByClassName('ticker-text')
+	var elements_t =document.getElementsByClassName('title')
+	var elements_d =document.getElementsByClassName('detail')
+	var elements_st =document.getElementsByClassName('slide-text')
+	var elements_btn =document.getElementsByClassName('topic-btn')
+	var elements_bt =document.getElementsByClassName('button')
+	var elements_nbt =document.getElementsByClassName('number-text')
+	var elements_day =document.getElementsByClassName('day')
+	var elements_month =document.getElementsByClassName('month')
+	var elements_year =document.getElementsByClassName('year')
+	for(var i=0; i < elements_tt.length; i++){
+		var element = elements_tt[i]
+		element.style.fontSize = "medium"
+	}
+	for(var i=0; i < elements_t.length; i++){
+		var element = elements_t[i]
+		element.style.fontSize = "medium"
+	}
+	for(var i=0; i < elements_d.length; i++){
+		var element = elements_d[i]
+		element.style.fontSize = "medium"
+	}
+	for(var i=0; i < elements_st.length; i++){
+		var element = elements_st[i]
+		element.style.fontSize = "medium"
+	}
+	for(var i=0; i < elements_btn.length; i++){
+		var element = elements_btn[i]
+		element.style.fontSize = "medium"
+	}
+	for(var i=0; i < elements_nbt.length; i++){
+		var element = elements_nbt[i]
+		element.style.fontSize = "medium"
+	}
+	for(var i=0; i < elements_bt.length; i++){
+		var element = elements_bt[i]
+		element.style.fontSize = "medium"
+	}
+	for(var i=0; i < elements_day.length; i++){
+		var element = elements_day[i]
+		element.style.fontSize = "medium"
+	}
+	for(var i=0; i < elements_month.length; i++){
+		var element = elements_month[i]
+		element.style.fontSize = "medium"
+	}
+	for(var i=0; i < elements_year.length; i++){
+		var element = elements_year[i]
+		element.style.fontSize = "medium"
+	}
 }
-function normalFontSize() {
-	txt = document.getElementById('container-id');
-    style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
-    currentSize = parseFloat(style);
-    txt.style.fontSize = (currentSize + 1) + 'px';
+// For Setting the Font size to large for all the article box and slideshow text
+function largeFontSize() {
+	var elements_tt =document.getElementsByClassName('ticker-text')
+	var elements_t =document.getElementsByClassName('title')
+	var elements_d =document.getElementsByClassName('detail')
+	var elements_st =document.getElementsByClassName('slide-text')
+	var elements_btn =document.getElementsByClassName('topic-btn')
+	var elements_bt =document.getElementsByClassName('button')
+	var elements_nbt =document.getElementsByClassName('number-text')
+	var elements_day =document.getElementsByClassName('day')
+	var elements_month =document.getElementsByClassName('month')
+	var elements_year =document.getElementsByClassName('year')
+	for(var i=0; i < elements_tt.length; i++){
+		var element = elements_tt[i]
+		element.style.fontSize = "large"
+	}
+	for(var i=0; i < elements_t.length; i++){
+		var element = elements_t[i]
+		element.style.fontSize = "large"
+	}
+	for(var i=0; i < elements_d.length; i++){
+		var element = elements_d[i]
+		element.style.fontSize = "large"
+	}
+	for(var i=0; i < elements_st.length; i++){
+		var element = elements_st[i]
+		element.style.fontSize = "large"
+	}
+	for(var i=0; i < elements_btn.length; i++){
+		var element = elements_btn[i]
+		element.style.fontSize = "large"
+	}
+	for(var i=0; i < elements_nbt.length; i++){
+		var element = elements_nbt[i]
+		element.style.fontSize = "large"
+	}
+	for(var i=0; i < elements_bt.length; i++){
+		var element = elements_bt[i]
+		element.style.fontSize = "large"
+	}
+	for(var i=0; i < elements_day.length; i++){
+		var element = elements_day[i]
+		element.style.fontSize = "large"
+	}
+	for(var i=0; i < elements_month.length; i++){
+		var element = elements_month[i]
+		element.style.fontSize = "large"
+	}
+	for(var i=0; i < elements_year.length; i++){
+		var element = elements_year[i]
+		element.style.fontSize = "large"
+	}
 }
 
 // Function to automate vertical scroll

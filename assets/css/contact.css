@@ -31,18 +31,20 @@ A CSS Grid layout styling is chosen   */
 
 /* Wrapper for the contact form  */
 .wrapper{
-  position: absolute;
+  position: relative;
+  margin-top: .5em;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   max-width: 55em;
   width: 100%;
-  height: 50%;
+  height: auto;
   background: #fff;
   padding: 25px;
   border-radius: 5px;
-  box-shadow: 4px 4px 2px rgba(254,236,164,1); 
+  box-shadow: 4px 4px 2px #fc5c65; 
   grid-area: contact-form;
+  margin-bottom: 14em;
 }
 /* heading for the contact form  */
 .wrapper h2{
@@ -58,7 +60,7 @@ A CSS Grid layout styling is chosen   */
   margin-bottom: 10px;
   
 }
-
+/* input section styling */
 .wrapper .input_field input[type="text"],
 .wrapper textarea{
   border: 1px solid #e0e0e0;
@@ -69,40 +71,40 @@ A CSS Grid layout styling is chosen   */
 
 .wrapper textarea{
   resize: none;
-  height: 200px;
+  height: auto;
   font-size: 20px;
   
 }
-
+/* submit button styling */
 .wrapper .btn input[type="submit"]{
-  border: 0px;
-  margin-top: 15px;
-  padding: 10px;
+  border: 1em;
+  margin-top: 3em;
+  padding: .5em;
   text-align: center;
   width: 100%;
-  background: #fece0c;
+  background: #fc5c65;
   color: #332902;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: bold;
   border-radius: 25px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.5em;
 }
-
+/* validation error message  */
 #error_message{
-  margin-bottom: 20px;
+  margin-bottom: 2em;
   background: #fe8b8e;
   padding: 0px;
   text-align: center;
-  font-size: 1px;
+  font-size: 1em;
   transition: all 0.5s ease;
 }
 
 /* Styling for smaller phone devices */
 @media only screen and (max-width: 550px) {
   .container {
-    height: 145vh;
+    height: 185vh;
     grid-template-columns: 1fr;
     grid-template-rows: .04fr .01fr auto .01fr ;
     grid-template-areas:
@@ -111,6 +113,32 @@ A CSS Grid layout styling is chosen   */
     "contact-form"
     "footer";
   }
+  /* contact form styling for mobile device */
+  .wrapper{
+    position: absolute;
+    max-width: 20em;
+    width: 100%;
+    height: 60%;
+    margin-top: 5em;
+    margin-bottom: 1em;
+  
+  }
+  .wrapper .btn input[type="submit"]{
+    border: 1em;
+    margin-top: 0em;
+    padding: .5em;
+    text-align: center;
+    width: 100%;
+    background: #fc5c65;
+    color: #332902;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+  /* navigation bar styling for mobile  */
 .nav a {display: none;}
 .nav a.icon {
   float: right;
@@ -138,14 +166,6 @@ A CSS Grid layout styling is chosen   */
   margin-top:1.2em;
   margin-bottom:.2em;
 }
-.wrapper{
-  position: absolute;
-  max-width: 20em;
-  width: 100%;
-  height: 60%;
-  margin-top: 5em;
-  margin-bottom: 10em;
 
-}
 
   }

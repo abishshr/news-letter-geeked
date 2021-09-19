@@ -27,13 +27,16 @@
       <!-- Common Header and navigation bar for all the pages -->
       <!-- Header Company Logo  -->
         <div id="header">
+           <!-- Three font buttons are added so that user can adjust font size -small medium and large  -->
           <div id ="font-adjuster"> 
-          <a id ="s-font" href="javascript:smallFontSize();"><i class="fas fa-font"></i></a>
-          <a id ="m-font" href="javascript:normalFontSize();"><i class="fas fa-font"></i></a>
-          <a id ="l-font" href="javascript:largeFontSize();"><i class="fas fa-font"></i></a>
+            <a id ="s-font" href="javascript:smallFontSize();"><i class="fas fa-font"></i></a>
+            <a id ="m-font" href="javascript:mediumFontSize();"><i class="fas fa-font"></i></a>
+            <a id ="l-font" href="javascript:largeFontSize();"><i class="fas fa-font"></i></a>
           </div>
-          <div id="header-logo"> <a href="/index.html">
-          <i class="fa fas fa-glasses"><span> GEEKÈD</span></i> 
+          <!-- company logo -->
+          <div id="header-logo"> 
+            <a href="/index.html">
+            <i class="fa fas fa-glasses"><span> GEEKÈD</span></i> 
           </div>
         </div>
         <!-- Navigation bar which has all the pages to navigate to  -->
@@ -59,13 +62,13 @@
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
               <!-- First slide contains the image of Main news from Tech -->
-              <div class="numbertext">1 / 3</div>
+              <div class="number-text">1 / 3</div>
               <img src="/assets/img/index-slideshow/index-slideshow-tesla.svg" alt ="Tesla AI bot image" style="width:100%">
               <div class="text">
-                <h3>Sep 09 2021 | Tech News | Tesla Bot unveiled</h3>
-                <p> 
+                <h3 class ="slide-text">Sep 09 2021 | Tech News | Tesla Bot unveiled</h3>
+                <p class ="slide-text">  
                   Elon Musk unveils Tesla Bot, a humanoid robot that uses vehicle AI </br>
-                  <a href="https://www.cnet.com/news/elon-musk-unveils-tesla-bot-a-humanoid-robot-utilizing-vehicle-ai/">Read More
+                  <a class ="slide-text" href="https://www.cnet.com/news/elon-musk-unveils-tesla-bot-a-humanoid-robot-utilizing-vehicle-ai/">Read More
                   <i class="fa fa-caret-right"></i>
                   </a>
                 </p>
@@ -73,12 +76,12 @@
             </div>
             <div class="mySlides fade">
             <!-- Second  slide contains the image of Main news from Space -->
-              <div class="numbertext">2 / 3</div>
+              <div class="number-text">2 / 3</div>
               <img src="/assets/img/index-slideshow/index-slideshow-launch.svg" alt ="JWST image" style="width:100%">
               <div class="text">
-                <h3>Sep 04 2021 | Space News | JWST Launch</h3>
-                <p>  JWST gets mid-December launch date </br>
-                  <a href="https://spacenews.com/jwst-gets-mid-december-launch-date/">Read More
+                <h3 class ="slide-text" >Sep 04 2021 | Space News | JWST Launch</h3>
+                <p class ="slide-text">  JWST gets mid-December launch date </br>
+                  <a class ="slide-text" href="https://spacenews.com/jwst-gets-mid-december-launch-date/">Read More
                   <i class="fa fa-caret-right"></i>
                   </a>
                 </p>
@@ -86,12 +89,12 @@
             </div>
             <div class="mySlides fade">
               <!-- Third  slide contains the image of Main news from Compics -->
-              <div class="numbertext">3 / 3</div>
+              <div class="number-text">3 / 3</div>
               <img src="/assets/img/index-slideshow/index-slideshow-batman.svg" alt ="Batman comics image" style="width:100%">
               <div class="text"> 
-                <h3>Sep 03 2021 | Comics News | Batman Comic</h3>
-                <p>FaZe Clan x Batman Comic Crossover Announced </br>
-                  <a href="https://www.esportstalk.com/news/faze-clan-batman-comic-crossover-announced/">Read More
+                <h3 class ="slide-text">Sep 03 2021 | Comics News | Batman Comic</h3>
+                <p class ="slide-text">FaZe Clan x Batman Comic Crossover Announced </br>
+                  <a class ="slide-text" href="https://www.esportstalk.com/news/faze-clan-batman-comic-crossover-announced/">Read More
                   <i class="fa fa-caret-right"></i>
                   </a>
                 </p>
@@ -116,97 +119,108 @@
         <div id="ticker">
           <div id="ticker-wrapper">
             <ul id="ticker-wrapper-inner">
+              <!-- Tech news number 1 -->
               <li>
                 <figure>
                   <img src=/assets/img/tech-news/latest-tech-news-bitcoin.svg alt="bitcoin" />
                 </figure>
-                <h3>Sep 7, 2021 |Tech News</h3>
-                  <p>Panama unveils bill to make Bitcoin legal tender 
+                <h3 class ="ticker-text">Sep 7, 2021 |Tech News</h3>
+                  <p class ="ticker-text">Panama unveils bill to make Bitcoin legal tender 
                     <br> 
-                    <a href="https://www.cnet.com/personal-finance/panama-unveils-bill-to-make-bitcoin-legal-tender/">Read More <i class="fas fa-angle-double-right"></i></a>
+                    <a class ="ticker-text" href="https://www.cnet.com/personal-finance/panama-unveils-bill-to-make-bitcoin-legal-tender/">Read More <i class="fas fa-angle-double-right"></i></a>
                   </p> 
                 
               </li>
+              <!-- Tech news number 2 -->
               <li>
                 <figure>
                   <img src=/assets/img/tech-news/latest-tech-news-apple.svg alt="apple logo" />
                 </figure>
-                <h3>Sep 2, 2021 |Tech News</h3>
-                <p> Apple’s iPhone 13 event will take place on September 14th
+                <h3 class ="ticker-text">Sep 2, 2021 |Tech News</h3>
+                <p class ="ticker-text"> Apple’s iPhone 13 event will take place on September 14th
                     <br>
-                    <a href="https://www.theverge.com/2021/9/7/22648593/apple-fall-event-2021-date-iphone-macbook-watch">Read More <i class="fas fa-angle-double-right"></i></a>
+                    <a class ="ticker-text" href="https://www.theverge.com/2021/9/7/22648593/apple-fall-event-2021-date-iphone-macbook-watch">Read More <i class="fas fa-angle-double-right"></i></a>
                 </p> 
               </li>
+              <!-- Tech news number 3 -->
               <li>
                 <figure>
                   <img src=/assets/img/tech-news/latest-tech-news-twitter.svg alt="twitter logo" />
                 </figure>
-                <h3>Sep 7, 2021 |Tech News</h3>
-                <p>Twitter 'Communities' feature lets people form groups to tweet about topics
-                    <br>Read More <a href="https://www.cnet.com/tech/mobile/twitter-communities-feature-lets-people-form-groups-to-tweet-about-topics/">Read More <i class="fas fa-angle-double-right"></i></a>
+                <h3 class ="ticker-text">Sep 7, 2021 |Tech News</h3>
+                <p class ="ticker-text">Twitter 'Communities' feature lets people form groups to tweet about topics
+                    <br> <a class ="ticker-text" href="https://www.cnet.com/tech/mobile/twitter-communities-feature-lets-people-form-groups-to-tweet-about-topics/">Read More <i class="fas fa-angle-double-right"></i></a>
                 </p> 
               </li>
+              <!-- Tech news number 4-->
               <li>
                 <figure>
                 <img src=/assets/img/tech-news/latest-tech-news-idea.svg alt="code written on intellij idea " />
                 </figure>
-                <h3>Sep 7, 2021 |Tech News</h3>
-                <p>JetBrains adds IDE to help data scientists build AI models in Python
-                    <br><a href="https://venturebeat.com/2021/09/08/jetbrains-adds-ide-to-help-data-scientists-build-ai-models-in-python/">Read More <i class="fas fa-angle-double-right"></i></a>
+                <h3 class ="ticker-text">Sep 7, 2021 |Tech News</h3>
+                <p class ="ticker-text">JetBrains adds IDE to help data scientists build AI models in Python
+                    <br><a class ="ticker-text" href="https://venturebeat.com/2021/09/08/jetbrains-adds-ide-to-help-data-scientists-build-ai-models-in-python/">Read More <i class="fas fa-angle-double-right"></i></a>
                 </p> 
               </li>
+              <!-- Tech news number 5-->
               <li>
                 <figure>
                 <img src=/assets/img/tech-news/latest-tech-news-ai-code.svg alt="image of ai writing code" />
                 </figure>
-                <h3>Sep 7, 2021 |Tech News</h3>
-                <p> A.I. Can Now Write Its Own Computer Code. That’s Good News for Humans.
-                  <br><a href="https://www.nytimes.com/2021/09/09/technology/codex-artificial-intelligence-coding.html">Read More <i class="fas fa-angle-double-right"></i></a>
+                <h3 class ="ticker-text">Sep 7, 2021 |Tech News</h3>
+                <p class ="ticker-text"> A.I. Can Now Write Its Own Computer Code. That’s Good News for Humans.
+                  <br><a class ="ticker-text" href="https://www.nytimes.com/2021/09/09/technology/codex-artificial-intelligence-coding.html">Read More <i class="fas fa-angle-double-right"></i></a>
                 </p>
               </li>
+              <!-- Tech news number 6-->
               <li>
                 <figure>
                 <img src=/assets/img/tech-news/latest-tech-news-airbnb.svg alt="airbnb logo" />
                 </figure>
-                <h3>Sep 7, 2021 |Tech News</h3>
-                <p> Airbnb to block some Halloween bookings 
-                  <br><a href="https://www.newsday.com/business/tech-alexa-airbnb-microsoft-hacking-1.50344491">Read More <i class="fas fa-angle-double-right"></i></a>
+                <h3 class ="ticker-text">Sep 7, 2021 |Tech News</h3>
+                <p class ="ticker-text"> Airbnb to block some Halloween bookings 
+                  <br><a class ="ticker-text" href="https://www.newsday.com/business/tech-alexa-airbnb-microsoft-hacking-1.50344491">Read More <i class="fas fa-angle-double-right"></i></a>
                 </p>
               </li>
+              <!-- Tech news number 7-->
               <li>
                 <figure>
                   <img src=/assets/img/tech-news/latest-tech-news-amc.svg alt="amc logo" />
                 </figure>
-                <h3>Sep 7, 2021 |Tech News</h3>
-                <p>AMC Theaters To Start Accepting Bitcoin…And Other Small Business Tech News
-                  <br><a href="https://www.forbes.com/sites/quickerbettertech/2021/08/15/amc-theaters-to-start-accepting-bitcoinand-other-small-business-tech-news/?sh=715ffd1f4840">Read More <i class="fas fa-angle-double-right"></i></a>
+                <h3 class ="ticker-text">Sep 7, 2021 |Tech News</h3>
+                <p class ="ticker-text">AMC Theaters To Start Accepting Bitcoin…And Other Small Business Tech News
+                  <br><a class ="ticker-text" href="https://www.forbes.com/sites/quickerbettertech/2021/08/15/amc-theaters-to-start-accepting-bitcoinand-other-small-business-tech-news/?sh=715ffd1f4840">Read More <i class="fas fa-angle-double-right"></i></a>
                 </p> 
               </li>
+              <!-- Tech news number 8-->
               <li>
               <figure>
                 <img src=/assets/img/tech-news/latest-tech-news-fda.svg alt="FDA logo and drug image " />
               </figure>
-              <h3>Sep 7, 2021 |Tech News</h3>
-              <p>  Tech companies meet with FDA to discuss how to curb sale of opioids online
-                  <br><a href="https://www.nbcnews.com/tech/tech-news/tech-companies-meet-fda-discuss-curb-sale-opioids-online-rcna1963">Read More <i class="fas fa-angle-double-right"></i></a>
+              <h3 class ="ticker-text">Sep 7, 2021 |Tech News</h3>
+              <p class ="ticker-text">  Tech companies meet with FDA to discuss how to curb sale of opioids online
+                  <br><a class ="ticker-text" href="https://www.nbcnews.com/tech/tech-news/tech-companies-meet-fda-discuss-curb-sale-opioids-online-rcna1963">Read More <i class="fas fa-angle-double-right"></i></a>
               </p> 
               </li>
+              <!-- Tech news number 9-->
               <li>
                 <figure>
                 <img src=/assets/img/tech-news/latest-tech-news-facebook.svg alt="facebook rayban google" />
                 </figure>
-                <h3>Sep 7, 2021 |Tech News</h3>
-                <p>Facebook debuts its Ray-Ban Stories smart sunglasses
-                  <br> <a href="https://techcrunch.com/2021/09/09/facebook-debuts-its-ray-ban-stories-smart-sunglasses/">Read More <i class="fas fa-angle-double-right"></i></a>
+                <h3 class ="ticker-text">Sep 7, 2021 |Tech News</h3>
+                <p class ="ticker-text">Facebook debuts its Ray-Ban Stories smart sunglasses
+                  <br> <a class ="ticker-text" href="https://techcrunch.com/2021/09/09/facebook-debuts-its-ray-ban-stories-smart-sunglasses/">Read More <i class="fas fa-angle-double-right"></i></a>
                 </h3>
                 </p> 
+              <li>
+                <!-- Tech news number 10-->
               <li>
                 <figure>
                   <img src=/assets/img/tech-news/latest-tech-news-amazon.svg alt="amazon logo" />
                 </figure>
-                  <h3>Sep 7, 2021 |Tech News</h3>
-                  <p>Amazon offers to pay college fees for 750,000 US staff 
-                    <br><a href="https://www.bbc.com/news/business-58509932">Read More <i class="fas fa-angle-double-right"></i></a>
+                  <h3 class ="ticker-text">Sep 7, 2021 |Tech News</h3>
+                  <p class ="ticker-text" >Amazon offers to pay college fees for 750,000 US staff 
+                    <br><a class ="ticker-text" href="https://www.bbc.com/news/business-58509932">Read More <i class="fas fa-angle-double-right"></i></a>
                   </p> 
               </li>
             </ul>
@@ -223,13 +237,16 @@
         This also contains dates and social media buttons  -->
         <!-- space content card 1  -->
         <div class="space-content card" id= space-content-1>
+          <!-- wrapper for the article card  -->
             <div class="wrapper">
               <div class="header">
+                <!-- Date section of the article card  -->
                 <div class="date">
                   <span class="day">12</span>
                   <span class="month">Aug</span>
                   <span class="year">2016</span>
                 </div>
+                <!-- social media and bookmark icons from font awesome  -->
                 <ul class="menu-content">
                   <li>
                     <a href="#" class="far fa-bookmark"></a>
@@ -238,6 +255,7 @@
                   <li><a href="#" class="far fa-comment"><span>3</span></a></li>
                 </ul>
               </div>
+              <!-- news article  -->
               <div class="data">
                 <div class="content">
                   <h3 class="title">Space News| NASA|</h3>
@@ -249,13 +267,16 @@
         </div>
         <!-- space content card 2  -->
         <div class="space-content card" id= space-content-2>
+          <!-- wrapper for the article card  -->
           <div class="wrapper">
             <div class="header">
+              <!-- Date section of the article card  -->
               <div class="date">
                 <span class="day">12</span>
                 <span class="month">Aug</span>
                 <span class="year">2016</span>
               </div>
+              <!-- social media and bookmark icons from font awesome  -->
               <ul class="menu-content">
                 <li>
                   <a href="#" class="far fa-bookmark"></a>
@@ -264,6 +285,7 @@
                 <li><a href="#" class="far fa-comment"><span>3</span></a></li>
               </ul>
             </div>
+            <!-- news article  -->
             <div class="data">
               <div class="content">
                 <h3 class="title">Space News| ROVER|</h3>
@@ -276,13 +298,16 @@
         </div>
         <!-- space content card 3  -->
         <div class="space-content card" id= space-content-3>
+          <!-- wrapper for the article card  -->
           <div class="wrapper">
             <div class="header">
+              <!-- Date section of the article card  -->
               <div class="date">
                 <span class="day">12</span>
                 <span class="month">Aug</span>
                 <span class="year">2016</span>
               </div>
+              <!-- social media and bookmark icons from font awesome  -->
               <ul class="menu-content">
                 <li>
                   <a href="#" class="far fa-bookmark"></a>
@@ -291,6 +316,7 @@
                 <li><a href="#" class="far fa-comment"><span>3</span></a></li>
               </ul>
             </div>
+            <!-- news article  -->
             <div class="data">
               <div class="content">
                 <h3 class="title">Space News| MARS|</h3>
@@ -310,13 +336,16 @@
         This also contains dates and social media buttons  -->
         <!-- Comics content card 1  -->
         <div class="comics-content card" id= comics-content-1>
+          <!-- wrapper for the article card  -->
           <div class="wrapper">
             <div class="header">
+              <!-- Date section of the article card  -->
               <div class="date">
                 <span class="day">12</span>
                 <span class="month">Aug</span>
                 <span class="year">2016</span>
               </div>
+              <!-- social media and bookmark icons from font awesome  -->
               <ul class="menu-content">
                 <li>
                   <a href="#" class="far fa-bookmark"></a>
@@ -324,7 +353,7 @@
                 <li><a href="#" class="far fa-heart"><span>18</span></a></li>
                 <li><a href="#" class="far fa-comment"><span>3</span></a></li>
               </ul>
-            </div>
+            <!-- news article  -->
             <div class="data">
               <div class="content">
                 <h3 class="title">Comic News|AVENGERS</h3>
@@ -336,13 +365,16 @@
         </div>
         <!-- Comics content card 2  -->
         <div class="comics-content card" id= comics-content-2>
+          <!-- wrapper for the article card  -->
           <div class="wrapper">
             <div class="header">
               <div class="date">
+                <!-- Date section of the article card  -->
                 <span class="day">12</span>
                 <span class="month">Aug</span>
                 <span class="year">2016</span>
               </div>
+              <!-- social media and bookmark icons from font awesome  -->
               <ul class="menu-content">
                 <li>
                   <a href="#" class="far fa-bookmark"></a>
@@ -351,6 +383,7 @@
                 <li><a href="#" class="far fa-comment"><span>3</span></a></li>
               </ul>
             </div>
+            <!-- news article  -->
             <div class="data">
               <div class="content">
                 <h3 class="title">Comic News|AVENGERS</h3>
@@ -363,13 +396,16 @@
         </div>
         <!-- Comics content card 3  -->
         <div class="comics-content card" id= comics-content-3>
+          <!-- wrapper for the article card  -->
           <div class="wrapper">
             <div class="header">
               <div class="date">
+                <!-- Date section of the article card  -->
                 <span class="day">12</span>
                 <span class="month">Aug</span>
                 <span class="year">2016</span>
               </div>
+              <!-- social media and bookmark icons from font awesome  -->
               <ul class="menu-content">
                 <li>
                   <a href="#" class="far fa-bookmark"></a>
@@ -378,6 +414,7 @@
                 <li><a href="#" class="far fa-comment"><span>3</span></a></li>
               </ul>
             </div>
+            <!-- news article  -->
             <div class="data">
               <div class="content">
                 <h3 class="title">Comic News|X-MEN</h3>
@@ -390,13 +427,16 @@
         </div>
         <!-- Comics content card 4  -->
         <div class="comics-content card" id= comics-content-4>
+          <!-- wrapper for the article card  -->
           <div class="wrapper">
             <div class="header">
+              <!-- Date section of the article card  -->
               <div class="date">
                 <span class="day">12</span>
                 <span class="month">Aug</span>
                 <span class="year">2016</span>
               </div>
+              <!-- social media and bookmark icons from font awesome  -->
               <ul class="menu-content">
                 <li>
                   <a href="#" class="far fa-bookmark"></a>
@@ -405,11 +445,11 @@
                 <li><a href="#" class="far fa-comment"><span>3</span></a></li>
               </ul>
             </div>
+            <!-- news article  -->
             <div class="data">
               <div class="content">
                 <h3 class="title">Comic News|JOKER</h3>
                 <p class="detail">Joker’s Yellow Lantern Powers Are a Huge Disappointment</p>
-          
                 <a href="https://screenrant.com/joker-yellow-lantern-sinestro-powers-comics-infinite-frontier/" class="button">Read more</a>
               </div>
             </div>
@@ -426,6 +466,7 @@
                 <div id= "footer-logo">
                 <i class="fas fa-glasses"></i> GEEKÈD 
                 </div>  
+                <!-- social media icons from font awesome -->
                 <div class="social-media">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
                   <a href="#"><i class="fab fa-twitter"></i></a>
@@ -442,6 +483,7 @@
                 <h1>Our Newsletter</h1>
                 <div class="border"></div>
                 <p>Enter Your Email to get our news and updates.</p>
+                <!-- email subscription form  -->
                 <form action="" class="newsletter-form">
                   <input type="text" class="txtb" placeholder="Enter Your Email">
                   <input type="submit" class="submit-btn" value="submit">

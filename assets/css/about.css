@@ -38,11 +38,13 @@ body {
     margin-bottom: 15em;
     border: black 2px;
 }
+/* wrapper inside the cube container */
 #cubeWrapper {
     width: 80em;
     display: flex;
     flex-direction: column;
 }
+/* individual cube styling */
 #cubes {
     display: flex;
     align-items: center;
@@ -59,6 +61,7 @@ body {
     font-weight: bold;
     text-shadow: 2px 2px white ;
 }
+/* head animation */
 .head h1:before, .head h1:after {
     content: "";
     height: 1px;
@@ -91,6 +94,7 @@ body {
 .moreTeam a svg {
     padding-left: 5px;
 }
+/* hover effect animation */
 .moreTeam a:hover {
     background: #ddd;
 }
@@ -114,6 +118,7 @@ body {
 .p6 {
     background: url('/assets/img/meet-the-team/person-6.jpg') center;
 }
+/* size and stylinng of each team member cube is set here */
 .cube {
     height: 300px;
     width: 300px;
@@ -197,6 +202,7 @@ body {
     opacity: 1;
     transition: 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
+/* hover annimation effect with social media icon  */
 .cube:hover .content li:nth-child(2) {
     transition-delay: 0.2s;
 }
@@ -212,11 +218,13 @@ body {
 .cube:hover .content p {
     top: 10px;
 }
+/* hover annimation effect creating border */
 .cube:hover .innerBorder {
     width: 90%;
     height: 90%;
     opacity: 1;
 }
+/* hover annimation effect darkening image */
 .cube:hover .darken {
     opacity: 1;
 }
@@ -251,7 +259,7 @@ body {
 /*Styling for smaller display like phone   */
 @media only screen and (max-width: 550px) {
     .container {
-        height: 125vh;
+        height: 70vh;
         grid-template-columns: 1fr;
         grid-template-rows: .04fr .01fr auto .01fr ;
         grid-template-areas:
@@ -260,7 +268,7 @@ body {
         "cubeContainer"
         "footer";
     }
-
+/* navigation bar styling for smaller display */
 .nav a {display: none;}
 .nav a.icon {
     float: right;
@@ -292,6 +300,8 @@ body {
 .cubeContainer{
     padding: 0em;
     margin: 0;
+    margin-bottom: 0;
+    position: relative;
 }
 .cube {
     height: 200px;
@@ -300,7 +310,7 @@ body {
 }
 #cubeWrapper {
     
-    padding-bottom: 30em;
+    padding-bottom: 2em;
     padding-right: 5em;
     padding-left: 5em;
     width: 20em;

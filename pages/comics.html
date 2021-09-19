@@ -10,20 +10,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="refresh" content="600">
     <meta name="keywords" content="Latest News in Tech, space and comics ">
+    <!-- Below are  two stylesheet 
+    1.) The common one which includes common styling like navigation bar ,header etc 
+    which are used for all the pages 
+    2.) comics.css has styling specific to index page-->
     <link rel="stylesheet" href="/assets/css/common.css">
     <link rel="stylesheet" href=/assets/css/comics.css>
+    <!-- External Fonts are added here  -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <title>GEEKÈD -Comics News</title>
 </head>
 <body>
     <!-- Main Container which contains all elements  -->
-    <div class="container">
-    <!-- Header Logo  -->
-        <div id="header-logo">
-            <a href="/index.html">
-            <i class="fa fas fa-glasses"><span> GEEKÈD</span>   </i> 
+    <div class="container" id="container-id">
+        <!-- Common Header and navigation bar for all the pages -->
+        <!-- Header starts here  -->
+        <div id="header">
+             <!-- Three font buttons are added so that user can adjust font size -small medium and large  -->
+            <div id ="font-adjuster"> 
+                <a id ="s-font" href="javascript:smallFontSize();"><i class="fas fa-font"></i></a>
+                <a id ="m-font" href="javascript:mediumFontSize();"><i class="fas fa-font"></i></a>
+                <a id ="l-font" href="javascript:largeFontSize();"><i class="fas fa-font"></i></a>
+            </div>
+            <!-- Comapany Logo -->
+            <div id="header-logo"> 
+                <a href="/index.html">
+                <i class="fa fas fa-glasses"><span> GEEKÈD</span></i> 
+            </div>
         </div>
+        <!-- Header ends here  -->
     <!-- Navigation bar which has all the pages to navigate to  -->
         <nav class="nav" id="nav">
             <a href=/pages/space.html>SPACE</a>
@@ -41,38 +57,46 @@
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
             <!-- First slide of main comic news -->
-            <div class="numbertext">1 / 3</div>
+            <div class="number-text">1 / 3</div>
             <img src="/assets/img/comics-slideshow/comics-slideshow-1.svg" alt ="Birds of Prey" style="width:100%">
+            <!-- News description goes here -->
             <div class="text">
-                <p> Comics News |28 Feb 2021| <br>
-                    Birds of Prey Writer Challenges Fans To Reveal Their First Comic Crush <br>
-                    <a href="https://screenrant.com/gail-simone-fineas5fridays-attractive-rogue-nightwing-storm-shehulk/">Click here for More
-                    <i class="fa fa-caret-right"></i>
-                    </a>
+                <h3 class="slide-text"> Comics News |28 Feb 2021| </h3>
+                    <br>
+                    <p class="slide-text">
+                        Birds of Prey Writer Challenges Fans To Reveal Their First Comic Crush <br>
+                        <a class="slide-text" href="https://screenrant.com/gail-simone-fineas5fridays-attractive-rogue-nightwing-storm-shehulk/">Read More
+                        <i class="fa fa-caret-right"></i>
+                        </a>
                     </p>
             </div>
             </div>
             <div class="mySlides fade">
             <!-- Second slide of main comic news -->
-            <div class="numbertext">2 / 3</div>
+            <div class="number-text">2 / 3</div>
             <img src="/assets/img/comics-slideshow/comics-slideshow-2.svg" alt ="invincible atom and eve" style="width:100%">
+            <!-- News description goes here -->
             <div class="text">
-                <p> Comics News |28 Feb 2021| <br>
+                <h3 class="slide-text"> Comics News |28 Feb 2021| </h3>
+                <br >
+                <p class="slide-text">
                     Invincible Proves Superheroes Should Date Each Other (Not Civilians) </br>
-                    <a href="https://screenrant.com/invincible-atom-eve-mark-relationship-dating-married-comics/">Click here for More
+                    <a class="slide-text" href="https://screenrant.com/invincible-atom-eve-mark-relationship-dating-married-comics/">Read More
                     <i class="fa fa-caret-right"></i>
                     </a>
-                    </p>
+                </p>
             </div>
             </div>
             <div class="mySlides fade">
             <!-- Third  slide of main comic news -->
-            <div class="numbertext">3 / 3</div>
+            <div class="number-text">3 / 3</div>
             <img src="/assets/img/comics-slideshow/comics-slideshow-3.svg" alt="iron-man and wolverine" style="width:100%">
+            <!-- News description goes here -->
             <div class="text">                   
-                <p> Comics News |28 Feb 2021| <br>
-                    Iron Man Just Gave Wolverine His Original Comic Book Weakness </br>
-                <a href="https://screenrant.com/iron-man-wolverine-comic-weakness-techon-avengers-healing/">Click here for More
+                <h3 class="slide-text"> Comics News |28 Feb 2021| </h3>
+                <br>
+                 <p class="slide-text">Iron Man Just Gave Wolverine His Original Comic Book Weakness </br>
+                <a class="slide-text" href="https://screenrant.com/iron-man-wolverine-comic-weakness-techon-avengers-healing/">Read More
                 <i class="fa fa-caret-right"></i>
                 </a>
                 </p>
@@ -181,6 +205,7 @@
                 <div id= "footer-logo">
                 <i class="fas fa-glasses"></i> GEEKÈD 
                 </div>  
+                <!-- Company social meida buttons  -->
                 <div class="social-media">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -197,6 +222,7 @@
                 <h1>Our Newsletter</h1>
                 <div class="border"></div>
                 <p>Enter Your Email to get our news and updates.</p>
+                <!-- email subscription form  -->
                 <form action="" class="newsletter-form">
                     <input type="text" class="txtb" placeholder="Enter Your Email">
                     <input type="submit" class="submit-btn" value="submit">
@@ -207,6 +233,7 @@
         </footer>
         <!-- end of footer container -->
     </div >
+    <!-- external javascript is added here  -->
     <script src=/assets/js/comics.js></script> 
 </body>
 </html>
